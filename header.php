@@ -79,8 +79,8 @@
                                 <li><a href="#">Drop Down 4</a></li>
                             </ul>
                         </li>
+                        <li><a class="nav-link scrollto" href="client.php">Clients</a></li>
                         <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-                        <li><a class="getstarted scrollto" href="#about">Get Started</a></li>
                     </ul>
                     <!-- End For Index Page -->
                 <?php
@@ -91,8 +91,8 @@
                         <li><a class="nav-link scrollto" href="index.php">Home</a></li>
                         <?php
                         if (basename($_SERVER['PHP_SELF']) == 'aboutus.php') {
-                        ?>  
-                        <!-- for aboutus page -->
+                        ?>
+                            <!-- for aboutus page -->
                             <li class="dropdown active"><a href="#"><span>About Us</span> <i class="bi bi-chevron-down"></i></a>
                                 <ul>
                                     <li><a href="#overview">Company Overview</a></li>
@@ -102,7 +102,7 @@
                             <!-- End for aboutus page -->
                         <?php } else {
                         ?>
-                          <!-- for other page -->
+                            <!-- for other page -->
                             <li><a class="nav-link scrollto" href="aboutus.php">About Us</a></li>
                         <?php } ?>
                         <li><a class="nav-link scrollto" href="index.php">Our Value</a></li>
@@ -126,8 +126,8 @@
                                 <li><a href="#">Drop Down 4</a></li>
                             </ul>
                         </li>
+                        <li><a class="nav-link scrollto" href="client.php">Clients</a></li>
                         <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-                        <li><a class="getstarted scrollto" href="#about">Get Started</a></li>
                     </ul>
 
                 <?php
@@ -160,3 +160,7 @@
 </body>
 
 </html>
+
+
+
+

@@ -27,6 +27,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap" rel="stylesheet">
   <!-- <link rel="icon" type="image/x-icon" href="favicon.ico"> -->
 
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"></script> -->
+
+
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -40,6 +46,30 @@
   <link href="assets/css/style.css" rel="stylesheet">
 </head>
 
+<style type="text/css">
+  .clients-btn {
+    font-weight: 600 !important;
+    font-size: 14px !important;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 8px 32px !important;
+    border-radius: 50px !important;
+    transition: 0.3s;
+    color: #3498db !important;
+    animation-delay: 0.8s;
+    margin-top: 4px;
+    margin-bottom: 10px;
+    border: 2px solid #3498db !important;
+  }
+
+  .clients-btn:hover {
+    background: #3498db;
+    color: #fff !important;
+    text-decoration: none;
+  }
+</style>
+
+
 <body>
 
   <!-- ======= Header ======= -->
@@ -49,8 +79,7 @@
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center">
 
-    <div class="container">
-      <div class="row">
+    <!-- <div class="row">
         <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
           <h1 data-aos="fade-up">Grow your business with Touch & Feel Electro System</h1>
           <h2 data-aos="fade-up" data-aos-delay="150">Electronic Security, Surveillance, AV & Automation System Experts
@@ -63,8 +92,94 @@
         <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="fade-left" data-aos-delay="150">
           <img src="assets/img/hero-img.png" class="img-fluid animated" alt="">
         </div>
+      </div> -->
+
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
       </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://wallpaperaccess.com/full/2461288.jpg" class="slider-img" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 style="padding-bottom: 80px;">First slide label</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://images8.alphacoders.com/431/thumb-1920-431230.jpg" class="slider-img">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://s1.1zoom.me/big7/116/Orc_Warriors_Men_499374.jpg" class="slider-img">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
+
+
+
+
+
+
+    <!-- <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://wallpaperaccess.com/full/2461288.jpg" class="slider-img" alt="...">
+          <div class="carousel-caption">
+            <h5>First slide label</h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://images8.alphacoders.com/431/thumb-1920-431230.jpg" class="slider-img">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://s1.1zoom.me/big7/116/Orc_Warriors_Men_499374.jpg" class="slider-img">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://images8.alphacoders.com/431/thumb-1920-431230.jpg" class="slider-img">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    </div> -->
 
   </section><!-- End Hero -->
 
@@ -72,7 +187,7 @@
 
     <!-- ======= Clients Section ======= -->
     <section id="clients" class="clients clients">
-      <div class="container">
+      <div class="container mt-4">
 
         <div class="row">
 
@@ -101,6 +216,10 @@
           </div>
 
         </div>
+
+        <a href="client.php">
+          <button type="button" class="btn btn-outline-default clients-btn">View More</button>
+        </a>
 
       </div>
     </section>
@@ -192,9 +311,9 @@
                     </span>
                     <script>
                       var d = new Date();
-                      var established=2018;
-                      var n = d.getFullYear()+1;
-                      document.getElementById("experience").innerHTML = n-established;
+                      var established = 2018;
+                      var n = d.getFullYear() + 1;
+                      document.getElementById("experience").innerHTML = n - established;
                     </script>
                     <p><strong>Years of experience</strong> aut commodi quaerat modi aliquam nam ducimus aut voluptate
                       non vel</p>
@@ -355,7 +474,7 @@
         </div>
 
         <div class="row">
-          <div class="col-md-6 col-lg-4 d-flex text-center mb-5 mb-lg-0">
+          <div class="col-md-6 col-lg-4 d-flex text-center mb-4">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
               <div class="icon">
                 <!-- <i class="fas fa-check-square"></i> -->
@@ -368,7 +487,7 @@
             </div>
           </div>
 
-          <div class="col-md-6 col-lg-4 d-flex text-center mb-5 mb-lg-0">
+          <div class="col-md-6 col-lg-4 d-flex text-center mb-4">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
               <div class="icon">
                 <i class="fa fa-chart-line"></i>
@@ -379,16 +498,17 @@
             </div>
           </div>
 
-
-          <div class="col-md-6 col-lg-4 d-flex text-center mb-5 mb-lg-0">
+          <div class="col-md-6 col-lg-4 d-flex text-center mb-4">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
               <div class="icon"><i class="fa fa-server"></i></div>
               <h4 class="title"><a href="">SERVICE</a></h4>
               <p class="description">Strongly believe and follow in “Service first, then Sales”.</p>
             </div>
           </div>
+        </div>
 
-          <div class="col-md-6 col-lg-4 d-flex text-center mb-5 mb-lg-0">
+        <div class="row">
+          <div class="col-md-6 col-lg-4 d-flex text-center mb-4">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
               <div class="icon"><i class="fa fa-building"></i></div>
               <h4 class="title"><a href="">INTEGRITY</a></h4>
@@ -397,7 +517,7 @@
             </div>
           </div>
 
-          <div class="col-md-6 col-lg-4 d-flex text-center mb-5 mb-lg-0">
+          <div class="col-md-6 col-lg-4 d-flex text-center mb-4">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
               <div class="icon"><i class="fa fa-users"></i></div>
               <h4 class="title"><a href="">TEAMWORK</a></h4>
@@ -408,7 +528,7 @@
             </div>
           </div>
 
-          <div class="col-md-6 col-lg-4 d-flex text-center mb-5 mb-lg-0">
+          <div class="col-md-6 col-lg-4 d-flex text-center mb-4">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
               <div class="icon"><i class="bx bx-file-find"></i></div>
               <h4 class="title"><a href="">TRANSPARENCY</a></h4>
