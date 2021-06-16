@@ -14,17 +14,17 @@
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet"> -->
   <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous"> -->
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Mukta+Vaani:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap" rel="stylesheet"> -->
   <!-- <link rel="icon" type="image/x-icon" href="favicon.ico"> -->
 
   <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
@@ -34,13 +34,13 @@
 
 
   <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <!-- <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet"> -->
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
@@ -78,22 +78,6 @@
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center">
-
-    <!-- <div class="row">
-        <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
-          <h1 data-aos="fade-up">Grow your business with Touch & Feel Electro System</h1>
-          <h2 data-aos="fade-up" data-aos-delay="150">Electronic Security, Surveillance, AV & Automation System Experts
-
-          </h2>
-          <div data-aos="fade-up" data-aos-delay="150">
-            <a href="#about" class="btn-get-started scrollto">Get Started</a>
-          </div>
-        </div>
-        <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="fade-left" data-aos-delay="150">
-          <img src="assets/img/hero-img.png" class="img-fluid animated" alt="">
-        </div>
-      </div> -->
-
 
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
@@ -134,54 +118,8 @@
       </button>
     </div>
 
-
-
-
-
-
-    <!-- <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="https://wallpaperaccess.com/full/2461288.jpg" class="slider-img" alt="...">
-          <div class="carousel-caption">
-            <h5>First slide label</h5>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="https://images8.alphacoders.com/431/thumb-1920-431230.jpg" class="slider-img">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Second slide label</h5>
-            <p>Some representative placeholder content for the second slide.</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="https://s1.1zoom.me/big7/116/Orc_Warriors_Men_499374.jpg" class="slider-img">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Third slide label</h5>
-            <p>Some representative placeholder content for the third slide.</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="https://images8.alphacoders.com/431/thumb-1920-431230.jpg" class="slider-img">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Second slide label</h5>
-            <p>Some representative placeholder content for the second slide.</p>
-          </div>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-    </div> -->
-
-  </section><!-- End Hero -->
+  </section>
+  <!-- End Hero -->
 
   <main id="main">
 
@@ -348,76 +286,7 @@
           <h3 class="d-sm-none" style="font-size:25px;"><b style="margin-right:10px;color:#026e99">--</b>Turnkey Solution Providers <b style="margin-left:10px;color:#026e99">--</b></h3>
           <p>For World Class Security, Surveillance and Audio Visual Systems</p>
         </div>
-        <!-- 
-          Product range show
-          <div class="row content mt-1 mb-2 about">
-          <div class="col-md-4 col-sm-12" data-aos="fade-up" data-aos-delay="150" style="margin-top: 15px;">
-            <ul style="list-style: none;">
-              <li>
-                <i class="fa fa-dot-circle" style="color: #026e99;font-size: 12px;"></i>
-                <span style="font-size: 13pt;">Home automation</span>
-              </li>
-              <li>
-                <i class="fa fa-dot-circle" style="color: #026e99;font-size: 12px;"></i>
-                <span style="font-size: 13pt;">Industrial automation</span>
-              </li>
-              <li>
-                <i class="fa fa-dot-circle" style="color: #026e99;font-size: 12px;"></i>
-                <span style="font-size: 13pt;">Gate automation</span>
-              </li>
-              <li>
-                <i class="fa fa-dot-circle" style="color: #026e99;font-size: 12px;"></i>
-                <span style="font-size: 13pt;">Door automation</span>
-              </li>
-              
-            </ul>
-          </div>
-          <div class="col-md-4 col-sm-12" data-aos="fade-up" data-aos-delay="150" style="margin-top: 15px;">
-            <ul style="list-style: none;">
-              <li>
-                <i class="fa fa-dot-circle" style="color: #026e99;font-size: 12px;"></i>
-                <span style="font-size: 13pt;">Professional sound system</span>
-              </li>
-              <li>
-                <i class="fa fa-dot-circle" style="color: #026e99;font-size: 12px;"></i>
-                <span style="font-size: 13pt;">Time attendance system</span>
-              </li>
-              <li>
-                <i class="fa fa-dot-circle" style="color: #026e99;font-size: 12px;"></i>
-                <span style="font-size: 13pt;">Home theatre system</span>
-              </li>
-              <li>
-                <i class="fa fa-dot-circle" style="color: #026e99;font-size: 12px;"></i>
-                <span style="font-size: 13pt;">EPABX & IPBAX</span>
-              </li>
-              
-            </ul>
-          </div>
-          <div class="col-md-4 col-sm-12" data-aos="fade-up" data-aos-delay="150" style="margin-top: 15px;">
-            <ul style="list-style: none;">
-              <li>
-                <i class="fa fa-dot-circle" style="color: #026e99;font-size: 12px;"></i>
-                <span style="font-size: 13pt;">CCTV & Lighting</span>
-              </li>
-              <li>
-                <i class="fa fa-dot-circle" style="color: #026e99;font-size: 12px;"></i>
-                <span style="font-size: 13pt;">Fire & Intruder alarm system</span>
-              </li>
-              <li>
-                <i class="fa fa-dot-circle" style="color: #026e99;font-size: 12px;"></i>
-                <span style="font-size: 13pt;">VDP &#40; Video door phone &#41;</span>
-              </li>
-              <li>
-                <i class="fa fa-dot-circle" style="color: #026e99;font-size: 12px;"></i>
-                <span style="font-size: 13pt;">Digital lock</span>
-              </li>
-            </ul>
-          </div>
-          
 
-        </div> 
-         <hr/>
-         -->
         <div class="row">
           <div class="col-md-6 col-lg-4 d-flex text-left mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
@@ -543,61 +412,6 @@
     </section>
     <!-- End Our Value Section -->
 
-    <!-- ======= More Services Section ======= -->
-    <!-- <section id="more-services" class="more-services">
-      <div class="container">
-
-        <div class="row">
-          <div class="col-md-6 d-flex align-items-stretch">
-            <div class="card" style='background-image: url("assets/img/more-services-1.jpg");' data-aos="fade-up"
-              data-aos-delay="100">
-              <div class="card-body">
-                <h5 class="card-title"><a href="">Lobira Duno</a></h5>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor ut labore et
-                  dolore magna aliqua.</p>
-                <div class="read-more"><a href="#"><i class="bi bi-arrow-right"></i> Read More</a></div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
-            <div class="card" style='background-image: url("assets/img/more-services-2.jpg");' data-aos="fade-up"
-              data-aos-delay="200">
-              <div class="card-body">
-                <h5 class="card-title"><a href="">Limere Radses</a></h5>
-                <p class="card-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem doloremque
-                  laudantium, totam rem.</p>
-                <div class="read-more"><a href="#"><i class="bi bi-arrow-right"></i> Read More</a></div>
-              </div>
-            </div>
-
-          </div>
-          <div class="col-md-6 d-flex align-items-stretch mt-4">
-            <div class="card" style='background-image: url("assets/img/more-services-3.jpg");' data-aos="fade-up"
-              data-aos-delay="100">
-              <div class="card-body">
-                <h5 class="card-title"><a href="">Nive Lodo</a></h5>
-                <p class="card-text">Nemo enim ipsam voluptatem quia voluptas sit aut odit aut fugit, sed quia magni
-                  dolores.</p>
-                <div class="read-more"><a href="#"><i class="bi bi-arrow-right"></i> Read More</a></div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 d-flex align-items-stretch mt-4">
-            <div class="card" style='background-image: url("assets/img/more-services-4.jpg");' data-aos="fade-up"
-              data-aos-delay="200">
-              <div class="card-body">
-                <h5 class="card-title"><a href="">Pale Treda</a></h5>
-                <p class="card-text">Nostrum eum sed et autem dolorum perspiciatis. Magni porro quisquam laudantium
-                  voluptatem.</p>
-                <div class="read-more"><a href="#"><i class="bi bi-arrow-right"></i> Read More</a></div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section> -->
-    <!-- End More Services Section -->
 
     <!-- ======= Features Section ======= -->
     <section id="features" class="features">
@@ -683,15 +497,6 @@
               <h3><a href="">Access Control System </a></h3>
             </div>
           </div>
-
-          <!-- OLD -->
-          <!-- <div class="col-lg-3 col-md-4">
-            <div class="icon-box">
-              <i class="ri-store-line" style="color: #ffbb2c;"></i>
-              <h3><a href="">Professional sound system</a></h3>
-            </div>
-          </div> -->
-
         </div>
 
       </div>
@@ -1039,73 +844,7 @@
     </section>
     <!-- End Team Section -->
 
-    <!-- ======= Pricing Section ======= -->
-    <!-- <section id="pricing" class="pricing">
-      <div class="container">
 
-        <div class="section-title">
-          <h2>Pricing</h2>
-          <p>Sit sint consectetur velit nemo qui impedit suscipit alias ea</p>
-        </div>
-
-        <div class="row">
-
-          <div class="col-lg-4 col-md-6">
-            <div class="box" data-aos="zoom-in-right" data-aos-delay="200">
-              <h3>Free</h3>
-              <h4><sup>$</sup>0<span> / month</span></h4>
-              <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li class="na">Pharetra massa</li>
-                <li class="na">Massa ultricies mi</li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Buy Now</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 mt-4 mt-md-0">
-            <div class="box recommended" data-aos="zoom-in" data-aos-delay="100">
-              <h3>Business</h3>
-              <h4><sup>$</sup>19<span> / month</span></h4>
-              <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li>Pharetra massa</li>
-                <li class="na">Massa ultricies mi</li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Buy Now</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 mt-4 mt-lg-0">
-            <div class="box" data-aos="zoom-in-left" data-aos-delay="200">
-              <h3>Developer</h3>
-              <h4><sup>$</sup>29<span> / month</span></h4>
-              <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li>Pharetra massa</li>
-                <li>Massa ultricies mi</li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Buy Now</a>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section> -->
-    <!-- End Pricing Section -->
 
     <!-- ======= F.A.Q Section ======= -->
     <section id="faq" class="faq">
@@ -1266,16 +1005,16 @@
   <?php include 'footer.php' ?>
   <!-- End Footer -->
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/aos/aos.js"></script>
+  <!-- <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/purecounter/purecounter.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script> -->
 
   <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <!-- <script src="assets/js/main.js"></script> -->
 
 
 </body>

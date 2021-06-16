@@ -95,8 +95,8 @@
                             <!-- for aboutus page -->
                             <li class="dropdown active"><a href="#"><span>About Us</span> <i class="bi bi-chevron-down"></i></a>
                                 <ul>
-                                    <li><a href="#overview">Company Overview</a></li>
-                                    <li><a href="#approach">Our Approach</a></li>
+                                    <li><a class="nav-link scrollto" href="#overview">Company Overview</a></li>
+                                    <li><a class="nav-link scrollto" href="#approach">Our Approach</a></li>
                                 </ul>
                             </li>
                             <!-- End for aboutus page -->
