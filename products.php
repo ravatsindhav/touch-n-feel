@@ -13,8 +13,9 @@
     <link href="assets/img/favicon.png" rel="icon">
     <style>
         body {
-            background-color: #f5f5f5!important;
+            background-color: #f5f5f5 !important;
         }
+
         .product-img {
             width: 100%;
             height: 300px;
@@ -43,6 +44,7 @@
             background-position: 0 .4em;
             background-repeat: no-repeat;
         }
+
         .image-set-1 {
             width: 100%;
             height: auto;
@@ -128,8 +130,10 @@
 
             <div class="row mt-5 mb-5">
                 <div class="col-md-12">
+                    <h4 class="alert alert-default text-light text-center p-2 rounded-0 ml-3" style="background: #3498db;">Partial List of our Valued Customers</h4>
+                </div>
+                <div class="col-md-12">
                     <div class="card p-3 rounded-0 border-0 bg-white" data-aos="fade-up">
-                        
                         <div class="row">
                             <div class="col-md-6">
                                 <ul class="list-decoration list-decoration--gradient">
@@ -149,13 +153,14 @@
                             <div class="col-md-6">
                                 <img src="https://edsystemsindia.com/wp-content/uploads/2016/01/cctv1.png" class="image-set-1">
                                 <ul class="list-decoration list-decoration--gradient">
-                                    
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+            
 
 
 

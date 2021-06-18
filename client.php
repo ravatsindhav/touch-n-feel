@@ -51,44 +51,46 @@
 
 
     <main id="main">
-
         <div class="container" style="margin-top:120px;">
             <div class="row">
                 <div class="col-md-12">
-                    <h4 class="alert alert-default text-light text-center p-2 rounded-0" style="background: #7986cb;"><b>Partial List of our Valued Customers</b></h4>
+                    <h4 class="alert alert-default text-light text-center p-2 rounded-0" style="background: #3498db;">Partial List of our Valued Customers</h4>
                 </div>
             </div>
 
+            
             <div class="row">
-                <div class="col-md-12 mb-5 mt-3">
-
-                    <div class="card-group mt-2">
-                        <div class="card rounded-0 shadow-sm">
-                            <div class="row justify-content-center">
-                                <img src="https://edsystemsindia.com/wp-content/uploads/2018/12/New-Project-90-200x200.png" style="width: 280px; height: 240px;">
-                            </div>
-                        </div>
-                        <div class="card rounded-0 shadow-sm">
-                        <div class="row justify-content-center p-0">
-                                <img src="https://edsystemsindia.com/wp-content/uploads/2018/12/New-Project-91-1-200x200.png" style="width: 280px; height: 240px;">
-                            </div>
-                        </div>
-                        <div class="card rounded-0 shadow-sm">
-                        <div class="row justify-content-center p-0">
-                                <img src="https://edsystemsindia.com/wp-content/uploads/2018/12/New-Project-92-200x200.png" style="width: 280px; height: 240px;">
-                            </div>
-                        </div>
-                        <div class="card rounded-0 shadow-sm">
-                        <div class="row justify-content-center p-0">
-                                <img src="https://edsystemsindia.com/wp-content/uploads/2018/12/New-Project-93-1-200x200.png" style="width: 280px; height: 240px;">
-                            </div>
+                <div class="col-md-3">
+                    <div class="card rounded-0 border-0 shadow-sm mb-4">
+                        <div class="row justify-content-center">
+                            <img src="https://edsystemsindia.com/wp-content/uploads/2018/12/New-Project-90-200x200.png" style="width: 280px; height: 240px;">
                         </div>
                     </div>
-
+                </div>
+                <div class="col-md-3">
+                    <div class="card rounded-0 border-0 shadow-sm  mb-4">
+                        <div class="row justify-content-center p-0">
+                            <img src="https://edsystemsindia.com/wp-content/uploads/2018/12/New-Project-91-1-200x200.png" style="width: 280px; height: 240px;">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card rounded-0 border-0 shadow-sm  mb-4">
+                        <div class="row justify-content-center p-0">
+                            <img src="https://edsystemsindia.com/wp-content/uploads/2018/12/New-Project-92-200x200.png" style="width: 280px; height: 240px;">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card rounded-0 border-0 shadow-sm  mb-4">
+                        <div class="row justify-content-center p-0">
+                            <img src="https://edsystemsindia.com/wp-content/uploads/2018/12/New-Project-93-1-200x200.png" style="width: 280px; height: 240px;">
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>            
 
+        </div>
     </main>
     <!-- End #main -->
 

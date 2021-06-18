@@ -46,27 +46,7 @@
   <link href="assets/css/style.css" rel="stylesheet">
 </head>
 
-<style type="text/css">
-  .clients-btn {
-    font-weight: 600 !important;
-    font-size: 14px !important;
-    letter-spacing: 1px;
-    display: inline-block;
-    padding: 8px 32px !important;
-    border-radius: 50px !important;
-    transition: 0.3s;
-    color: #3498db !important;
-    animation-delay: 0.8s;
-    margin-top: 4px;
-    margin-bottom: 10px;
-    border: 2px solid #3498db !important;
-  }
 
-  .clients-btn:hover {
-    background: #3498db;
-    color: #fff !important;
-    text-decoration: none;
-  }
 </style>
 
 
@@ -89,22 +69,19 @@
         <div class="carousel-item active">
           <img src="https://wallpaperaccess.com/full/2461288.jpg" class="slider-img" alt="...">
           <div class="carousel-caption d-none d-md-block">
-            <h5 style="padding-bottom: 80px;">First slide label</h5>
-            <p>Some representative placeholder content for the first slide.</p>
+            <h5 style="padding-bottom: 120px;">First slide label</h5>
           </div>
         </div>
         <div class="carousel-item">
           <img src="https://images8.alphacoders.com/431/thumb-1920-431230.jpg" class="slider-img">
           <div class="carousel-caption d-none d-md-block">
-            <h5>Second slide label</h5>
-            <p>Some representative placeholder content for the second slide.</p>
+            <h5 style="padding-bottom: 120px;">Second slide label</h5>
           </div>
         </div>
         <div class="carousel-item">
           <img src="https://s1.1zoom.me/big7/116/Orc_Warriors_Men_499374.jpg" class="slider-img">
           <div class="carousel-caption d-none d-md-block">
-            <h5>Third slide label</h5>
-            <p>Some representative placeholder content for the third slide.</p>
+            <h5 style="padding-bottom: 120px;">Third slide label</h5>
           </div>
         </div>
       </div>
