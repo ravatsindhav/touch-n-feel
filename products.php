@@ -27,7 +27,6 @@
             font-size: 13px !important;
         }
 
-
         .list-decoration {
             padding-left: 0px;
             list-style: none;

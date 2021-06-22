@@ -1,0 +1,133 @@
+/*------------------------ Product Detail ----------------------*/
+.list-decoration--gradient li {
+    margin-top: 5px;
+    padding-left: 1em;
+    color: #000;
+    font-weight: 400;
+    background-image: radial-gradient(#c62828 0.16em, transparent 0.16em);
+    background-size: 0.5em 0.5em;
+    background-position: 0 0.4em;
+    background-repeat: no-repeat;
+    list-style-type: none;
+}
+.image-set-1 {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    vertical-align: center;
+}
+.item-heading {
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+.btn-right {
+    float: right;
+    border: none;
+    border-radius: 10px;
+    margin-top: 2px;
+}
+.icon-size {
+    font-size: 21px;
+}
+
+@media only screen and (max-width: 768px) {
+    .icon-size {
+        font-size: 15px;
+    }
+  }
+
+/*=============== edit product page css =================*/
+
+.edit-image-1 {
+    width: 70%;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+}
+.save-btn-success {
+    width: 20%;
+    margin-top: 20px;
+}
+.total-input-border {
+    border: 0.6px solid rgb(231, 231, 231);
+}
+
+
+
+
+/*================= File Upload css =================*/
+.file {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.file > input[type="file"] {
+    display: none;
+}
+
+.file > label {
+    font-size: 1rem;
+    font-weight: 300;
+    cursor: pointer;
+    outline: 0;
+    margin-top: 40px;
+    user-select: none;
+    border-color: rgb(216, 216, 216) rgb(209, 209, 209) rgb(186, 186, 186);
+    border-style: solid;
+    border-radius: 0px;
+    border-width: 0.5px;
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(0, 0%, 29%);
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.file > label:hover {
+    border-color: hsl(0, 0%, 21%);
+}
+
+.file > label:active {
+    background-color: hsl(0, 0%, 96%);
+}
+
+.file > label > i {
+    padding-right: 5px;
+}
+
+.file--upload > label {
+    color: hsl(147, 95%, 34%);
+    border-color: hsl(147, 95%, 34%);
+}
+
+.file--upload > label:hover {
+    border-color: hsl(147, 95%, 34%);
+    background-color: hsl(147, 95%, 34%);
+    color: #fff;
+}
+
+/*================= Category Page css =================*/
+.btn-right-1 {
+    float: right;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: -5px;
+}
+.btn.focus, .btn:focus {
+    outline: 0;
+    box-shadow: none!important;
+}
+.icon-size-1 {
+    font-size: 15px;
+}
+
+
+
+/*================= Login Page css =================*/
+

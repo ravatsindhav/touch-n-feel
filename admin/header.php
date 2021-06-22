@@ -10,8 +10,8 @@
     <meta content="" name="keywords">
 
     <!-- Favicons -->
-    <link href="assets/img/favicon.png" rel="icon">
-    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="../assets/img/favicon.png" rel="icon">
+    <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -28,16 +28,17 @@
     <!-- <link rel="icon" type="image/x-icon" href="favicon.ico"> -->
 
     <!-- Vendor CSS Files -->
-    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
     <!-- Template Main CSS File -->
-    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="../assets/css/style.css" rel="stylesheet">
+    <link href="../assets/css/admin.css" rel="stylesheet">
 </head>
 
 <body>
@@ -52,15 +53,11 @@
 
             <nav id="navbar" class="navbar">
                 <?php
-                if (basename($_SERVER['PHP_SELF']) == 'index.php') {
+                if (basename($_SERVER['PHP_SELF']) == 'products.php') {
                 ?>
                     <!-- For Index Page -->
                     <ul>
-                        <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-                        <li><a class="nav-link scrollto" href="#about">About Us</a></li>
-                        <li><a class="nav-link scrollto" href="#ourvalue">Our Value</a></li>
-                        <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>
-                        <li><a class="nav-link scrollto" href="solution.php">Solution</a></li>
+                        <li><a class="nav-link scrollto active" href="home.php">Home</a></li>
 
                         <li class="dropdown"><a href="#"><span>Products</span> <i class="bi bi-chevron-down"></i></a>
                             <ul>
@@ -79,8 +76,9 @@
                                 <li><a href="#">Drop Down 4</a></li>
                             </ul>
                         </li>
-                        <li><a class="nav-link scrollto" href="client.php">Clients</a></li>
+                        <li><a class="nav-link scrollto" href="client.php">Category</a></li>
                         <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+                        <li><a class="nav-link scrollto" href="login.php">Login</a></li>
                     </ul>
                     <!-- End For Index Page -->
                 <?php
@@ -88,28 +86,10 @@
                 ?>
                     <!-- For other Page -->
                     <ul>
-                        <li><a class="nav-link scrollto" href="index.php">Home</a></li>
-                        <?php
-                        if (basename($_SERVER['PHP_SELF']) == 'aboutus.php') {
-                        ?>
-                            <!-- for aboutus page -->
-                            <li class="dropdown active"><a href="#"><span>About Us</span> <i class="bi bi-chevron-down"></i></a>
-                                <ul>
-                                    <li><a class="nav-link scrollto" href="#overview">Company Overview</a></li>
-                                    <li><a class="nav-link scrollto" href="#approach">Our Approach</a></li>
-                                </ul>
-                            </li>
-                            <!-- End for aboutus page -->
-                        <?php } else {
-                        ?>
-                            <!-- for other page -->
-                            <li><a class="nav-link scrollto" href="aboutus.php">About Us</a></li>
-                        <?php } ?>
-                        <li><a class="nav-link scrollto" href="index.php">Our Value</a></li>
-                        <li><a class="nav-link scrollto " href="index.php">Portfolio</a></li>
-                        <li><a class="nav-link scrollto" href="solution.php">Solution</a></li>
+                        <li><a class="nav-link scrollto" href="home.php">Home</a></li>
+                        
 
-                        <li class="dropdown"><a href="#"><span>Products</span> <i class="bi bi-chevron-down"></i></a>
+                        <!-- <li class="dropdown"><a href="#"><span>Products</span> <i class="bi bi-chevron-down"></i></a>
                             <ul>
                                 <li><a href="products.php">All Products</a></li>
                                 <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
@@ -125,8 +105,9 @@
                                 <li><a href="#">Drop Down 3</a></li>
                                 <li><a href="#">Drop Down 4</a></li>
                             </ul>
-                        </li>
-                        <li><a class="nav-link scrollto" href="client.php">Clients</a></li>
+                        </li> -->
+                        <li><a class="nav-link scrollto" href="products.php">Products</a></li>
+                        <li><a class="nav-link scrollto" href="client.php">Category</a></li>
                         <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
                     </ul>
 
@@ -146,16 +127,16 @@
     <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
     <!-- Vendor JS Files -->
-    <script src="assets/vendor/aos/aos.js"></script>
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="assets/vendor/php-email-form/validate.js"></script>
-    <script src="assets/vendor/purecounter/purecounter.js"></script>
-    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="../assets/vendor/aos/aos.js"></script>
+    <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="../assets/vendor/php-email-form/validate.js"></script>
+    <script src="../assets/vendor/purecounter/purecounter.js"></script>
+    <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
 
     <!-- Template Main JS File -->
-    <script src="assets/js/main.js"></script>
+    <script src="../assets/js/main.js"></script>
 
 </body>
 
