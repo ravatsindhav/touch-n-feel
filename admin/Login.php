@@ -1,14 +1,17 @@
-  <!-- Vendor CSS Files -->
-  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="../assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Vendor CSS Files -->
+<link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+<link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+<link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+<link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+<link href="../assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+<link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+<link href="assets/css/admin.css" rel="stylesheet">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,20 +21,23 @@
     body {
         background: linear-gradient(-35deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.75)), url('https://cdn.hipwallpaper.com/i/52/98/jOBTIU.jpg');
         height: 100%;
-        padding: 60px;
         background-repeat: no-repeat;
         background-size: cover;
-        position: relative;
-        overflow: hidden;
+        background-position: center;
+        padding: 30px;
     }
 
-    /*---editable---*/
+
+
     .card-size {
-        width: 450px!important;
+        width: 450px !important;
         height: auto;
-        background-color: rgba(255, 255, 255, 0.8);
-        margin-top: 10%;
-        vertical-align: center;
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+
+    .card-top {
+        margin-top: 170px;
     }
 
     .font-1 {
@@ -45,7 +51,7 @@
         margin: 0;
         font-weight: 400;
         font-size: 35px;
-        color: #512da8;
+        color: #283593;
         -webkit-transition: all 0.4s ease 0s;
         -o-transition: all 0.4s ease 0s;
         transition: all 0.4s ease 0s;
@@ -82,43 +88,59 @@
 
     .input-active {
         border-radius: 0px !important;
-        border: 0.5px solid #b39ddb;
+        border: 0.5px solid #5c6bc0;
     }
 
     .input-active:focus {
-        border: 0.5px solid #512da8;
+        border: 0.5px solid #283593;
         border-radius: 0px !important;
-        box-shadow: 0.5px 0.5px 7px #b39ddb;
+        box-shadow: 0.5px 0.5px 7px #283593;
         outline: 0;
     }
 
     .spacing {
-        margin-top: 20px;
-        margin: 20px;
+        margin-top: 30px !important;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .form-spacing {
+        margin-top: -20px;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+        font-family: 'Quicksand', sans-serif;
+        color: #283593;
+
     }
 
     .form-control::placeholder {
-        color: #9575cd;
+        color: #283593;
         opacity: 1;
+        font-family: 'Quicksand', sans-serif;
     }
 
     .form-control:-ms-input-placeholder {
-        color: #9575cd;
+        color: #283593;
+        font-family: 'Quicksand', sans-serif;
     }
 
     .form-control::-ms-input-placeholder {
-        color: #9575cd;
+        color: #283593;
+        font-family: 'Quicksand', sans-serif;
     }
 
     /*---editable---*/
     .btn-login {
         font-weight: 500;
-        background: #7e57c2;
+        background: #283593;
         border-radius: 0;
-        margin-top: 50px;
+        margin-top: 40px;
         margin-bottom: 30px;
         padding: 5px;
         color: #fff;
+        font-family: 'Quicksand', sans-serif;
     }
 
     .btn-login:focus {
@@ -133,39 +155,63 @@
     /* X-Small devices (portrait phones, less than 576px) */
     @media screen and (max-width: 400px) {
         .card-size {
-            width: 500px;
-            margin-top: 20%;
+            width: 350px !important;
+            margin-top: 150px !important;
+        }
+
+        .spacing {
+            margin-top: 20px;
         }
     }
-    
+
     /* X-Small devices (portrait phones, less than 576px) */
     @media screen and (max-width: 576px) {
         .card-size {
-            width: 400px;
-            margin-top: 20%;
+            width: 500px!important;
+            margin-top: 20%!important;
         }
     }
 
     /* Small devices (landscape phones, less than 768px) */
     @media screen and (max-width: 768px) {
         .card-size {
-            width: 600px;
-            margin-top: 26%;
+            width: 600px !important;
+            margin-top: 20%!important;
+        }
+
+        .spacing {
+            margin-top: 20px !important;
+        }
+
+        .btn-login {
+            margin-top: 40px;
+            margin-bottom: 20px;
         }
     }
 
     /* Medium devices (tablets, less than 992px) */
-    @media screen and (max-width: 992px) {
+    @media screen and (min-width: 992px) and (max-width: 1050px)  {
         .card-size {
-            width: 500px;
-            margin-top: 21% !important;
+            width: 800px !important;
+            margin-top: 30% !important;
+        }
+
+        .spacing {
+            margin-top: 60px !important;
+            margin-left: 60px;
+            margin-right: 40px;
+        }
+
+        .btn-login {
+            margin-top: 70px;
+            margin-bottom: 60px;
         }
     }
 
     /* X-Large devices (large desktops, less than 1400px) */
     @media screen and (max-width: 1400px) {
         .card-size {
-            width: 500px;
+            width: 800px;
             margin-top: 13%;
         }
     }
@@ -175,13 +221,13 @@
 
 
     <div class="row justify-content-center">
-        <div class="card card-size border-0 rounded-0">
+        <div class="card card-size border-0 card-top">
             <div class="one mt-5 mb-4">
                 <h1>Log In</h1>
-                <p class="text-center mt-3" style="color: #9575cd;">Please enter your login and password !</p>
+                <p class="text-center mt-3 font-1" style="color: #303f9f;">Please enter your login and password !</p>
             </div>
 
-            <form action="" method="post" role="form">
+            <form action="" method="post" role="form" class="form-spacing">
                 <div class="form-group spacing">
                     <input type="text" name="name" class="form-control input-active mr-5" id="name" placeholder="Enter Your Username..." required>
                 </div>
@@ -200,6 +246,7 @@
 
 
 </body>
+
 
 <!-- Vendor JS Files -->
 <script src="assets/vendor/aos/aos.js"></script>
