@@ -11,7 +11,7 @@
     list-style-type: none;
 }
 .image-set-1 {
-    width: 100%;
+    width: 300px;
     height: auto;
     background-size: cover;
     vertical-align: center;
@@ -39,7 +39,7 @@
 /*=============== edit product page css =================*/
 
 .edit-image-1 {
-    width: 70%;
+    width: 100%;
     height: auto;
     background-size: cover;
     background-position: center;

@@ -99,10 +99,10 @@
         </div>
         <div class="col-3">
           <button type="button" class="btn btn-outline-danger btn-right">
-            <i class="fas fa-trash-alt icon-size"></i>
+            <i class="fas fa-trash-alt icon-size" data-bs-toggle="modal" href="#DeleteProductModel" role="button"></i>
           </button>
           <button type="button" class="btn btn-outline-success btn-right">
-            <i class="fas fa-edit icon-size"></i>
+            <i class="fas fa-edit icon-size" data-bs-toggle="modal" href="#EditProductModel" role="button"></i>
           </button>
         </div>
       </div>
@@ -135,12 +135,7 @@
 
 
 
-
-
-
-
-
-  <!-- ================================================================ Edit Product Page ================================================================== -->
+  <!-- ============= Edit Product Page ============ -->
   <section class="container">
 
     <div class="row">
@@ -158,7 +153,7 @@
           </select>
         </div>
         <div class="mb-3">
-          <input type="text" class="form-control rounded-0 bg-light total-input-border" id="exampleFormControlInput1" placeholder="Enter Product Name...">
+          <textarea class="form-control rounded-0 bg-light total-input-border" id="exampleFormControlTextarea1" rows="3" placeholder="Enter Product Name..."></textarea>
         </div>
       </div>
 
@@ -183,13 +178,7 @@
 
   </section>
 
-
-
-
-
-
-
-  <!-- ================================================================ Add Product Page ================================================================== -->
+  <!-- ============= Add Product Page ==============-->
   <section class="container">
 
     <div class="row">
@@ -207,7 +196,7 @@
           </select>
         </div>
         <div class="mb-3">
-          <input type="text" class="form-control rounded-0 bg-light total-input-border" id="exampleFormControlInput1" placeholder="Enter Product Name...">
+          <textarea class="form-control rounded-0 bg-light total-input-border" id="exampleFormControlTextarea1" rows="3" placeholder="Enter Product Name..."></textarea>
         </div>
       </div>
 
@@ -233,6 +222,144 @@
     </div>
 
   </section>
+
+
+
+
+
+  <!-- ================================================================== Model Box ======================================================================== -->
+
+
+  <!-------- Edit Product Model --------->
+
+  <div class="modal fade" id="EditProductModel" aria-labelledby="exampleModalToggleLabel">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-success" id="exampleModalToggleLabel">&#9824; Edit Product</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <!-- ========== Edit Product Page ========== -->
+          <section class="container">
+
+            <div class="row" style="margin-top: -50px;">
+              <div class="col-md-12">
+                <div class="row justify-content-center">
+                  <img src="https://edsystemsindia.com/wp-content/uploads/2016/01/cctv1.png" width="550" height="auto">
+                  <button type="button" class="btn btn-danger rounded-0 w-50 btn-sm mt-3">Remove Photo</button>
+                </div>
+              </div>
+              <div class="col-md-12 mt-4">
+                <div class="mb-3">
+                  <input type="text" class="form-control rounded-0 bg-light total-input-border" id="exampleFormControlInput1" placeholder="Enter Product Name...">
+                </div>
+                <div class="mb-3">
+                  <select class="form-select rounded-0 bg-light total-input-border" id="inputGroupSelect01">
+                    <option selected>Choose Category...</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+                <div class="mb-3">
+                  <textarea class="form-control rounded-0 bg-light total-input-border" id="exampleFormControlTextarea1" rows="3" placeholder="Enter Product Name..."></textarea>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12">
+                <div class="row justify-content-center">
+                  <button type="button" class="btn btn-success rounded-0 btn-sm save-btn-success w-50">Save</button>
+                </div>
+              </div>
+            </div>
+
+          </section>
+
+          <!-- ========== Add Product Page ========== -->
+          <section class="container">
+
+            <div class="row" style="margin-top: -50px;">
+              <div class="col-md-12">
+                <div class="row justify-content-center">
+                  <div class='file file--upload'>
+                    <label for='input-file'>
+                      <i class="fas fa-paperclip fa-2x" style="transform: rotate(-43deg);"></i><strong>Upload Image...</strong>
+                    </label>
+                    <input id='input-file' type='file' />
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12 mt-4">
+                <div class="mb-3">
+                  <input type="text" class="form-control rounded-0 bg-light total-input-border" id="exampleFormControlInput1" placeholder="Enter Product Name...">
+                </div>
+                <div class="mb-3">
+                  <select class="form-select rounded-0 bg-light total-input-border" id="inputGroupSelect01">
+                    <option selected>Choose Category...</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+                <div class="mb-3">
+                  <textarea class="form-control rounded-0 bg-light total-input-border" id="exampleFormControlTextarea1" rows="3" placeholder="Enter Product Name..."></textarea>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12">
+                <div class="row justify-content-center">
+                  <button type="button" class="btn btn-success rounded-0 btn-sm save-btn-success w-50">Save</button>
+                </div>
+              </div>
+            </div>
+
+          </section>
+          <!-- ========== Add Product Page ========== -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-------- Edit Product Model --------->
+
+  <div class="modal fade" id="DeleteProductModel" aria-labelledby="exampleModalToggleLabel2">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="row justify-content-center">
+            <i class="fas fa-exclamation-triangle fa-5x text-center text-danger mt-4"></i>
+            <h2 class="text-center text-secondary mt-4">Are You Sure ?</h2>
+            <p class="text-center text-secondary">Do You Really Want To Delete This Record..?</p>
+            <div class="row mt-3 mb-4">
+              <div class="col-6">
+                <button class="btn btn-danger w-75 float-end" type="button">Delete</button>
+              </div>
+              <div class="col-6">
+                <button class="btn btn-secondary w-75" type="button" data-bs-dismiss="modal" aria-label="Close">Cancel</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ===================================================================================================================================================== -->
+
+
+
+
+
+
 
   <!-- =================== Footer ================== -->
   <?php include 'footer.php' ?>
