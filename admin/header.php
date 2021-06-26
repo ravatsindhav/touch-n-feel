@@ -29,12 +29,12 @@
 
     <!-- Vendor CSS Files -->
     <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="../assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="../assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
     <!-- Template Main CSS File -->
     <link href="../assets/css/style.css" rel="stylesheet">
@@ -50,71 +50,14 @@
             <a href="index.php">
                 <p class="header-text">Touch & Feel Electro System</p>
             </a>
-
             <nav id="navbar" class="navbar">
-                <?php
-                if (basename($_SERVER['PHP_SELF']) == 'products.php') {
-                ?>
-                    <!-- For Index Page -->
-                    <ul>
-                        <li><a class="nav-link scrollto active" href="home.php">Home</a></li>
 
-                        <li class="dropdown"><a href="#"><span>Products</span> <i class="bi bi-chevron-down"></i></a>
-                            <ul>
-                                <li><a href="products.php">All Products</a></li>
-                                <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                                    <ul>
-                                        <li><a href="#">Deep Drop Down 1</a></li>
-                                        <li><a href="#">Deep Drop Down 2</a></li>
-                                        <li><a href="#">Deep Drop Down 3</a></li>
-                                        <li><a href="#">Deep Drop Down 4</a></li>
-                                        <li><a href="#">Deep Drop Down 5</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">Drop Down 2</a></li>
-                                <li><a href="#">Drop Down 3</a></li>
-                                <li><a href="#">Drop Down 4</a></li>
-                            </ul>
-                        </li>
-                        <li><a class="nav-link scrollto" href="client.php">Category</a></li>
-                        <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-                        <li><a class="nav-link scrollto" href="login.php">Login</a></li>
-                    </ul>
-                    <!-- End For Index Page -->
-                <?php
-                } else {
-                ?>
-                    <!-- For other Page -->
-                    <ul>
-                        <li><a class="nav-link scrollto" href="home.php">Home</a></li>
-                        
-
-                        <!-- <li class="dropdown"><a href="#"><span>Products</span> <i class="bi bi-chevron-down"></i></a>
-                            <ul>
-                                <li><a href="products.php">All Products</a></li>
-                                <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                                    <ul>
-                                        <li><a href="#">Deep Drop Down 1</a></li>
-                                        <li><a href="#">Deep Drop Down 2</a></li>
-                                        <li><a href="#">Deep Drop Down 3</a></li>
-                                        <li><a href="#">Deep Drop Down 4</a></li>
-                                        <li><a href="#">Deep Drop Down 5</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">Drop Down 2</a></li>
-                                <li><a href="#">Drop Down 3</a></li>
-                                <li><a href="#">Drop Down 4</a></li>
-                            </ul>
-                        </li> -->
-                        <li><a class="nav-link scrollto" href="products.php">Products</a></li>
-                        <li><a class="nav-link scrollto" href="client.php">Category</a></li>
-                        <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-                    </ul>
-
-                <?php
-                }
-
-                ?>
+                <ul>
+                    <li><a class="nav-link scrollto" href="product.php">Products</a></li>
+                    <li><a class="nav-link scrollto" href="category.php">Category</a></li>
+                    
+                    <li><a class="nav-link scrollto" href="#">Log Out</a></li>
+                </ul>
 
                 <i class="bi bi-list mobile-nav-toggle"></i>
             </nav>

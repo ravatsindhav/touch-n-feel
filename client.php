@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Touch And Feel Electro System | Complete Security Solon</title>
+    <title>Valued Customers | Touch & Feel Electro System</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -40,8 +40,6 @@
     <link href="assets/css/style.css" rel="stylesheet">
 </head>
 
-<style></style>
-
 <body style=" background-color: #f5f5f5!important;">
 
     <!-- ======= Header ======= -->
@@ -58,7 +56,7 @@
                 </div>
             </div>
 
-            
+
             <div class="row">
                 <div class="col-md-3">
                     <div class="card rounded-0 border-0 shadow-sm mb-4">

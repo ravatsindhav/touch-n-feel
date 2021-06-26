@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Touch And Feel Electro System | Complete Security Solon</title>
+  <title>Products | Complete Security Solon</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -59,10 +59,17 @@
 
 
 
-  <section class="container">
+  <section class="container mt-5">
 
     <!------------------------ Add Product & Category Dropdown --------------------->
-    <div class="row" style="margin-top: 90px;" data-aos="fade-up">
+    <div class="row mt-3" style="margin-top: 90px;" data-aos="fade-up">
+      <div class="col-md-12">
+        <div class="d-grid gap-2">
+          <button class="alert alert-success rounded-0" type="button">All Products</button>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-3" data-aos="fade-up">
       <div class="col-md-9">
         <div class="input-group mb-3">
           <select class="form-select border-success bg-light rounded-0" id="inputGroupSelect01">
@@ -76,7 +83,7 @@
       </div>
       <div class="col-md-3">
         <div class="d-grid gap-2">
-          <button class="btn btn-success rounded-0" type="button">Add New Product</button>
+          <button class="btn btn-success rounded-0" type="button"><a style="color:white;" href="add_product.php">Add New Product</a></button>
         </div>
       </div>
     </div>
@@ -182,7 +189,7 @@
 
 
 
-  <!-- ================================================================ Edit Product Page ================================================================== -->
+  <!-- ================================================================ Add Product Page ================================================================== -->
   <section class="container">
 
     <div class="row">
@@ -226,67 +233,6 @@
     </div>
 
   </section>
-
-
-
-  <!-- ================================================================ Category Page ================================================================== -->
-   <section class="container">
-    <div class="table-responsive">
-      <table class="table table-hover table-border border-light">
-        <thead>
-          <tr scope="row">
-            <th scope="col" class="table-success text-success p-2">#</th>
-            <th scope="col" class="table-success text-success p-2">Name</th>
-            <th scope="col" class="table-success text-success p-2">Discription</th>
-            <th scope="col" class="table-success text-success p-2"><span class="float-end">Action</span></th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>CCTV Survailance</td>
-            <td class="overflow-auto">A pixel is the smallest unit value to render something with.</td>
-            <td>
-              <button type="button" class="btn btn-default text-danger btn-right-1">
-                <i class="fas fa-trash-alt icon-size"></i>
-              </button>
-              <button type="button" class="btn btn-default text-success btn-right-1">
-                <i class="fas fa-edit icon-size"></i>
-              </button>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>First Class Security</td>
-            <td>We Provide total customized solutions with World-Class Technology & Quality Products.</td>
-            <td>
-              <button type="button" class="btn btn-default text-danger btn-right-1">
-                <i class="fas fa-trash-alt icon-size"></i>
-              </button>
-              <button type="button" class="btn btn-default text-success btn-right-1">
-                <i class="fas fa-edit icon-size"></i>
-              </button>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>Audio Visual Systems</td>
-            <td>Our strength lies in delivering best technology solutions and customer experience.</td>
-            <td>
-              <button type="button" class="btn btn-default text-danger btn-right-1">
-                <i class="fas fa-trash-alt icon-size"></i>
-              </button>
-              <button type="button" class="btn btn-default text-success btn-right-1">
-                <i class="fas fa-edit icon-size"></i>
-              </button>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </section>
-
-
 
   <!-- =================== Footer ================== -->
   <?php include 'footer.php' ?>

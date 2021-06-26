@@ -65,15 +65,6 @@
                         <li class="dropdown"><a href="#"><span>Products</span> <i class="bi bi-chevron-down"></i></a>
                             <ul>
                                 <li><a href="products.php">All Products</a></li>
-                                <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                                    <ul>
-                                        <li><a href="#">Deep Drop Down 1</a></li>
-                                        <li><a href="#">Deep Drop Down 2</a></li>
-                                        <li><a href="#">Deep Drop Down 3</a></li>
-                                        <li><a href="#">Deep Drop Down 4</a></li>
-                                        <li><a href="#">Deep Drop Down 5</a></li>
-                                    </ul>
-                                </li>
                                 <li><a href="#">Drop Down 2</a></li>
                                 <li><a href="#">Drop Down 3</a></li>
                                 <li><a href="#">Drop Down 4</a></li>
@@ -93,7 +84,7 @@
                         if (basename($_SERVER['PHP_SELF']) == 'aboutus.php') {
                         ?>
                             <!-- for aboutus page -->
-                            <li class="dropdown active"><a href="#"><span>About Us</span> <i class="bi bi-chevron-down"></i></a>
+                            <li class="dropdown active"><a class="active" href="#"><span>About Us</span> <i class="bi bi-chevron-down"></i></a>
                                 <ul>
                                     <li><a class="nav-link scrollto" href="#overview">Company Overview</a></li>
                                     <li><a class="nav-link scrollto" href="#approach">Our Approach</a></li>
@@ -105,29 +96,65 @@
                             <!-- for other page -->
                             <li><a class="nav-link scrollto" href="aboutus.php">About Us</a></li>
                         <?php } ?>
+
                         <li><a class="nav-link scrollto" href="index.php">Our Value</a></li>
                         <li><a class="nav-link scrollto " href="index.php">Portfolio</a></li>
-                        <li><a class="nav-link scrollto" href="solution.php">Solution</a></li>
 
-                        <li class="dropdown"><a href="#"><span>Products</span> <i class="bi bi-chevron-down"></i></a>
+
+                        <?php
+                        if (basename($_SERVER['PHP_SELF']) == 'solution.php') {
+                        ?>
+
+                            <li><a class="nav-link active" href="solution.php">Solution</a></li>
+                        <?php } else {
+                        ?>
+                            <li><a class="nav-link scrollto" href="solution.php">Solution</a></li>
+                        <?php
+                        } ?>
+
+                        <?php
+                        if (basename($_SERVER['PHP_SELF']) == 'products.php') {
+                        ?>
+
+                            <li class="dropdown"><a class="active" href="#"><span>Products</span> <i class="bi bi-chevron-down"></i></a>
+                            <?php } else {
+                            ?>
+                            <li class="dropdown"><a href="#"><span>Products</span> <i class="bi bi-chevron-down"></i></a>
+                            <?php
+                        } ?>
                             <ul>
+
                                 <li><a href="products.php">All Products</a></li>
-                                <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                                    <ul>
-                                        <li><a href="#">Deep Drop Down 1</a></li>
-                                        <li><a href="#">Deep Drop Down 2</a></li>
-                                        <li><a href="#">Deep Drop Down 3</a></li>
-                                        <li><a href="#">Deep Drop Down 4</a></li>
-                                        <li><a href="#">Deep Drop Down 5</a></li>
-                                    </ul>
-                                </li>
+
                                 <li><a href="#">Drop Down 2</a></li>
                                 <li><a href="#">Drop Down 3</a></li>
                                 <li><a href="#">Drop Down 4</a></li>
                             </ul>
-                        </li>
-                        <li><a class="nav-link scrollto" href="client.php">Clients</a></li>
-                        <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+                            </li>
+
+                            <?php
+                            if (basename($_SERVER['PHP_SELF']) == 'client.php') {
+                            ?>
+
+                                <li><a class="nav-link scrollto active" href="client.php">Clients</a></li>
+                            <?php } else {
+                            ?>
+                                <li><a class="nav-link scrollto" href="client.php">Clients</a></li>
+                            <?php
+                            } ?>
+
+                            <?php
+                            if (basename($_SERVER['PHP_SELF']) == 'contact.php') {
+                            ?>
+
+                                <li><a class="nav-link active" href="contact.php">Contact</a></li>
+                            <?php } else {
+                            ?>
+                                <li><a class="nav-link scrollto" href="contact.php">Contact</a></li>
+                            <?php
+                            } ?>
+
+
                     </ul>
 
                 <?php

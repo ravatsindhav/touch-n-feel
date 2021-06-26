@@ -63,7 +63,7 @@
 
     <main id="main">
         <!-- ======= About Us Section ======= -->
-        <!-- 
+        
         <section id="product" class="about">
             <div class="container" style="margin-top: 43px;">
                 <div class="section-title" data-aos="fade-up">
@@ -74,23 +74,23 @@
                 <div class="row content">
                         <div class="col-lg-6" data-aos="fade-up" data-aos-delay="150">
                             <p>
-                               <?php /* 
+                               <?php 
                                include('class/test.php');
-                               $add = new ConnectionClass();
+                               $add = new DBClass();
                                
                                $s=$add->getData();
 
                                while($r=mysqli_fetch_array($s))
                                        {
                                         echo $r['email'];
-                                       }*/
+                                       }
                                 ?> 
                             </p>
                         </div>
                     </div> 
             </div>
         </section>
-        -->
+       
 
         <!-- Container Start -->
         <div class="container" style="margin-top:155px;">
