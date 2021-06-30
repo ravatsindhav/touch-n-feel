@@ -1,12 +1,12 @@
 <?php
- 
-class ConnectionClass 
+  include "Connection.php";
+class DBClass extends Connection
     {
-        var $con;
-        function __construct()
-                {
-                    $this->con = mysqli_connect("127.0.0.1","root","","testing");
-                }
+        
+        // function __construct()
+        //         {
+        //             $this->con = mysqli_connect("127.0.0.1","root","","testing");
+        //         }
          function getData()
             {
                 // $this->email = $email;

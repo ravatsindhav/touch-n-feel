@@ -14,65 +14,99 @@
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet"> -->
   <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous"> -->
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Mukta+Vaani:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap" rel="stylesheet"> -->
   <!-- <link rel="icon" type="image/x-icon" href="favicon.ico"> -->
 
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"></script> -->
+
+
   <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <!-- <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet"> -->
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 </head>
 
+
+</style>
+
+
 <body>
 
-  <!-- ======= Header ======= -->
+  <!-- ============================================== Header ============================== -->
   <?php include 'header.php' ?>
-  <!-- End Header -->
+  <!----------------------------------------------- End Header ------------------------------->
 
-  <!-- ======= Hero Section ======= -->
+
+
+
+
+  <!-- ================================== Hero Section ==================================== -->
   <section id="hero" class="d-flex align-items-center">
 
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
-          <h1 data-aos="fade-up">Grow your business with Touch & Feel Electro System</h1>
-          <h2 data-aos="fade-up" data-aos-delay="150">Electronic Security, Surveillance, AV & Automation System Experts
-
-          </h2>
-          <div data-aos="fade-up" data-aos-delay="150">
-            <a href="#about" class="btn-get-started scrollto">Get Started</a>
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://wallpaperaccess.com/full/2461288.jpg" class="slider-img" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 style="padding-bottom: 160px;">First slide label</h5>
           </div>
         </div>
-        <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="fade-left" data-aos-delay="150">
-          <img src="assets/img/hero-img.png" class="img-fluid animated" alt="">
+        <div class="carousel-item">
+          <img src="https://images8.alphacoders.com/431/thumb-1920-431230.jpg" class="slider-img">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 style="padding-bottom: 120px;">Second slide label</h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://s1.1zoom.me/big7/116/Orc_Warriors_Men_499374.jpg" class="slider-img">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 style="padding-bottom: 120px;">Third slide label</h5>
+          </div>
         </div>
       </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
 
-  </section><!-- End Hero -->
+  </section>
+  <!------------------------------------------ End Hero -------------------------------------------->
 
   <main id="main">
 
-    <!-- ======= Clients Section ======= -->
+    <!-- ==================================== Clients Section ===================================== -->
     <section id="clients" class="clients clients">
-      <div class="container">
+      <div class="container mt-4">
 
         <div class="row">
 
@@ -102,11 +136,18 @@
 
         </div>
 
+        <a href="client.php">
+          <button type="button" class="btn btn-outline-default clients-btn">View More</button>
+        </a>
+
       </div>
     </section>
-    <!-- End Clients Section -->
+    <!----------------------------------------------- End Clients Section -------------------------------------------->
 
-    <!-- ======= About Us Section ======= -->
+
+
+
+    <!-- ============================================ About Us Section ============================================== -->
     <section id="about" class="about">
       <div class="container">
 
@@ -151,9 +192,12 @@
         </div>
 
       </div>
-    </section><!-- End About Us Section -->
+    </section>
+    <!------------------------------------------ End About Us Section ----------------------------------------->
 
-    <!-- ======= Counts Section ======= -->
+
+
+    <!-- ========================================== Counts Section ========================================= -->
     <section id="counts" class="counts">
       <div class="container">
 
@@ -192,9 +236,9 @@
                     </span>
                     <script>
                       var d = new Date();
-                      var established=2018;
-                      var n = d.getFullYear()+1;
-                      document.getElementById("experience").innerHTML = n-established;
+                      var established = 2018;
+                      var n = d.getFullYear() + 1;
+                      document.getElementById("experience").innerHTML = n - established;
                     </script>
                     <p><strong>Years of experience</strong> aut commodi quaerat modi aliquam nam ducimus aut voluptate
                       non vel</p>
@@ -215,11 +259,11 @@
 
       </div>
     </section>
-    <!-- End Counts Section -->
+    <!------------------------------------------------- End Counts Section ------------------------------------------->
 
 
 
-    <!-- ======= intro Section ======= -->
+    <!-- ================================================= intro Section =========================================== -->
     <section id="intro" class="services">
       <div class="container">
 
@@ -229,76 +273,7 @@
           <h3 class="d-sm-none" style="font-size:25px;"><b style="margin-right:10px;color:#026e99">--</b>Turnkey Solution Providers <b style="margin-left:10px;color:#026e99">--</b></h3>
           <p>For World Class Security, Surveillance and Audio Visual Systems</p>
         </div>
-        <!-- 
-          Product range show
-          <div class="row content mt-1 mb-2 about">
-          <div class="col-md-4 col-sm-12" data-aos="fade-up" data-aos-delay="150" style="margin-top: 15px;">
-            <ul style="list-style: none;">
-              <li>
-                <i class="fa fa-dot-circle" style="color: #026e99;font-size: 12px;"></i>
-                <span style="font-size: 13pt;">Home automation</span>
-              </li>
-              <li>
-                <i class="fa fa-dot-circle" style="color: #026e99;font-size: 12px;"></i>
-                <span style="font-size: 13pt;">Industrial automation</span>
-              </li>
-              <li>
-                <i class="fa fa-dot-circle" style="color: #026e99;font-size: 12px;"></i>
-                <span style="font-size: 13pt;">Gate automation</span>
-              </li>
-              <li>
-                <i class="fa fa-dot-circle" style="color: #026e99;font-size: 12px;"></i>
-                <span style="font-size: 13pt;">Door automation</span>
-              </li>
-              
-            </ul>
-          </div>
-          <div class="col-md-4 col-sm-12" data-aos="fade-up" data-aos-delay="150" style="margin-top: 15px;">
-            <ul style="list-style: none;">
-              <li>
-                <i class="fa fa-dot-circle" style="color: #026e99;font-size: 12px;"></i>
-                <span style="font-size: 13pt;">Professional sound system</span>
-              </li>
-              <li>
-                <i class="fa fa-dot-circle" style="color: #026e99;font-size: 12px;"></i>
-                <span style="font-size: 13pt;">Time attendance system</span>
-              </li>
-              <li>
-                <i class="fa fa-dot-circle" style="color: #026e99;font-size: 12px;"></i>
-                <span style="font-size: 13pt;">Home theatre system</span>
-              </li>
-              <li>
-                <i class="fa fa-dot-circle" style="color: #026e99;font-size: 12px;"></i>
-                <span style="font-size: 13pt;">EPABX & IPBAX</span>
-              </li>
-              
-            </ul>
-          </div>
-          <div class="col-md-4 col-sm-12" data-aos="fade-up" data-aos-delay="150" style="margin-top: 15px;">
-            <ul style="list-style: none;">
-              <li>
-                <i class="fa fa-dot-circle" style="color: #026e99;font-size: 12px;"></i>
-                <span style="font-size: 13pt;">CCTV & Lighting</span>
-              </li>
-              <li>
-                <i class="fa fa-dot-circle" style="color: #026e99;font-size: 12px;"></i>
-                <span style="font-size: 13pt;">Fire & Intruder alarm system</span>
-              </li>
-              <li>
-                <i class="fa fa-dot-circle" style="color: #026e99;font-size: 12px;"></i>
-                <span style="font-size: 13pt;">VDP &#40; Video door phone &#41;</span>
-              </li>
-              <li>
-                <i class="fa fa-dot-circle" style="color: #026e99;font-size: 12px;"></i>
-                <span style="font-size: 13pt;">Digital lock</span>
-              </li>
-            </ul>
-          </div>
-          
 
-        </div> 
-         <hr/>
-         -->
         <div class="row">
           <div class="col-md-6 col-lg-4 d-flex text-left mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
@@ -309,7 +284,7 @@
               <p class="description">
                 We Provide total customized solutions with World-Class Technology & Quality Products.
               </p>
-              <a href="aboutus.html">read more</a>
+              <a href="aboutus.html" class="description" style="font-weight: 600;">read more</a>
             </div>
           </div>
 
@@ -322,7 +297,7 @@
               <p class="description">
                 To provide Services fitting perfectly to our valuable customer’s needs in the area of Latest Technology.
               </p>
-              <a href="aboutus.html">read more</a>
+              <a href="aboutus.html" class="description" style="font-weight: 600;">read more</a>
 
             </div>
           </div>
@@ -336,16 +311,19 @@
               <p class="description">
                 Our strength lies in delivering best technology solutions and customer experience.
               </p>
-              <a href="aboutus.html">read more</a>
+              <a href="aboutus.html" class="description" style="font-weight: 600;">read more</a>
             </div>
           </div>
 
         </div>
       </div>
     </section>
-    <!-- End intro Section -->
+    <!--------------------------------------- End intro Section --------------------------------------->
 
-    <!-- ======= Our Value Section ======= -->
+
+
+
+    <!-- ==================================== Our Value Section ==================================== -->
     <section id="ourvalue" class="services">
       <div class="container">
 
@@ -355,7 +333,7 @@
         </div>
 
         <div class="row">
-          <div class="col-md-6 col-lg-4 d-flex text-center mb-5 mb-lg-0">
+          <div class="col-md-6 col-lg-4 d-flex text-center mb-4">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
               <div class="icon">
                 <!-- <i class="fas fa-check-square"></i> -->
@@ -368,7 +346,7 @@
             </div>
           </div>
 
-          <div class="col-md-6 col-lg-4 d-flex text-center mb-5 mb-lg-0">
+          <div class="col-md-6 col-lg-4 d-flex text-center mb-4">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
               <div class="icon">
                 <i class="fa fa-chart-line"></i>
@@ -379,16 +357,17 @@
             </div>
           </div>
 
-
-          <div class="col-md-6 col-lg-4 d-flex text-center mb-5 mb-lg-0">
+          <div class="col-md-6 col-lg-4 d-flex text-center mb-4">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
               <div class="icon"><i class="fa fa-server"></i></div>
               <h4 class="title"><a href="">SERVICE</a></h4>
               <p class="description">Strongly believe and follow in “Service first, then Sales”.</p>
             </div>
           </div>
+        </div>
 
-          <div class="col-md-6 col-lg-4 d-flex text-center mb-5 mb-lg-0">
+        <div class="row">
+          <div class="col-md-6 col-lg-4 d-flex text-center mb-4">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
               <div class="icon"><i class="fa fa-building"></i></div>
               <h4 class="title"><a href="">INTEGRITY</a></h4>
@@ -397,7 +376,7 @@
             </div>
           </div>
 
-          <div class="col-md-6 col-lg-4 d-flex text-center mb-5 mb-lg-0">
+          <div class="col-md-6 col-lg-4 d-flex text-center mb-4">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
               <div class="icon"><i class="fa fa-users"></i></div>
               <h4 class="title"><a href="">TEAMWORK</a></h4>
@@ -408,7 +387,7 @@
             </div>
           </div>
 
-          <div class="col-md-6 col-lg-4 d-flex text-center mb-5 mb-lg-0">
+          <div class="col-md-6 col-lg-4 d-flex text-center mb-4">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
               <div class="icon"><i class="bx bx-file-find"></i></div>
               <h4 class="title"><a href="">TRANSPARENCY</a></h4>
@@ -421,65 +400,10 @@
 
       </div>
     </section>
-    <!-- End Our Value Section -->
+    <!-------------------------------------------- End Our Value Section ---------------------------------------->
 
-    <!-- ======= More Services Section ======= -->
-    <!-- <section id="more-services" class="more-services">
-      <div class="container">
 
-        <div class="row">
-          <div class="col-md-6 d-flex align-items-stretch">
-            <div class="card" style='background-image: url("assets/img/more-services-1.jpg");' data-aos="fade-up"
-              data-aos-delay="100">
-              <div class="card-body">
-                <h5 class="card-title"><a href="">Lobira Duno</a></h5>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor ut labore et
-                  dolore magna aliqua.</p>
-                <div class="read-more"><a href="#"><i class="bi bi-arrow-right"></i> Read More</a></div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
-            <div class="card" style='background-image: url("assets/img/more-services-2.jpg");' data-aos="fade-up"
-              data-aos-delay="200">
-              <div class="card-body">
-                <h5 class="card-title"><a href="">Limere Radses</a></h5>
-                <p class="card-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem doloremque
-                  laudantium, totam rem.</p>
-                <div class="read-more"><a href="#"><i class="bi bi-arrow-right"></i> Read More</a></div>
-              </div>
-            </div>
-
-          </div>
-          <div class="col-md-6 d-flex align-items-stretch mt-4">
-            <div class="card" style='background-image: url("assets/img/more-services-3.jpg");' data-aos="fade-up"
-              data-aos-delay="100">
-              <div class="card-body">
-                <h5 class="card-title"><a href="">Nive Lodo</a></h5>
-                <p class="card-text">Nemo enim ipsam voluptatem quia voluptas sit aut odit aut fugit, sed quia magni
-                  dolores.</p>
-                <div class="read-more"><a href="#"><i class="bi bi-arrow-right"></i> Read More</a></div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 d-flex align-items-stretch mt-4">
-            <div class="card" style='background-image: url("assets/img/more-services-4.jpg");' data-aos="fade-up"
-              data-aos-delay="200">
-              <div class="card-body">
-                <h5 class="card-title"><a href="">Pale Treda</a></h5>
-                <p class="card-text">Nostrum eum sed et autem dolorum perspiciatis. Magni porro quisquam laudantium
-                  voluptatem.</p>
-                <div class="read-more"><a href="#"><i class="bi bi-arrow-right"></i> Read More</a></div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section> -->
-    <!-- End More Services Section -->
-
-    <!-- ======= Features Section ======= -->
+    <!-- ============================================ Features Section ======================================= -->
     <section id="features" class="features">
       <div class="container">
 
@@ -563,22 +487,17 @@
               <h3><a href="">Access Control System </a></h3>
             </div>
           </div>
-
-          <!-- OLD -->
-          <!-- <div class="col-lg-3 col-md-4">
-            <div class="icon-box">
-              <i class="ri-store-line" style="color: #ffbb2c;"></i>
-              <h3><a href="">Professional sound system</a></h3>
-            </div>
-          </div> -->
-
         </div>
 
       </div>
-    </section><!-- End Features Section -->
+    </section>
+    <!---------------------------------------- End Features Section ------------------------------------->
 
-    <!-- ======= Testimonials Section ======= -->
-    <section id="testimonials" class="testimonials section-bg">
+
+
+
+    <!-- ===================================== Testimonials Section ================================== -->
+    <section id="testimonials">
       <div class="container">
 
         <div class="section-title" data-aos="fade-up">
@@ -586,98 +505,54 @@
           <p>Magnam dolores commodi suscipit eum quidem consectetur velit</p>
         </div>
 
-        <div class="testimonials-slider swiper-container" data-aos="fade-up" data-aos-delay="100">
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="testimonial-wrap">
-                <div class="testimonial-item">
-                  <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-                  <h3>Saul Goodman</h3>
-                  <h4>Ceo &amp; Founder</h4>
-                  <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus.
-                    Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                  </p>
-                </div>
+        <div class="row mt-5">
+          <div class="col-md-6 col-lg-4">
+            <div class="card bg-light text-center border-0 mb-5" style="border-bottom: 3px solid #3498db!important;" data-aos="fade-up">
+              <div style="background-color: #3498db; width: 60px; height: 60px; border-radius: 50px; margin: 0 auto; margin-top: -30px;">
+                <i class="fa fa-quote-left fa-2x card-img-top rounded-circle text-white" style="margin-top: 13px;" aria-hidden="true"></i>
               </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-wrap">
-                <div class="testimonial-item">
-                  <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-                  <h3>Sara Wilsson</h3>
-                  <h4>Designer</h4>
-                  <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis
-                    quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                  </p>
-                </div>
+              <div class="card-body blockquote">
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer bibendum enim eu nibh finibus</p>
+                <footer class="blockquote-footer mt-2"><small><i>Mohamed Nady</i></small></footer>
               </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-wrap">
-                <div class="testimonial-item">
-                  <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-                  <h3>Jena Karlis</h3>
-                  <h4>Store Owner</h4>
-                  <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim
-                    tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                  </p>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-wrap">
-                <div class="testimonial-item">
-                  <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-                  <h3>Matt Brandon</h3>
-                  <h4>Freelancer</h4>
-                  <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit
-                    minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                  </p>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-wrap">
-                <div class="testimonial-item">
-                  <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-                  <h3>John Larson</h3>
-                  <h4>Entrepreneur</h4>
-                  <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim
-                    culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum
-                    quid.
-                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                  </p>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
+            </div>
           </div>
-          <div class="swiper-pagination"></div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card bg-light text-center border-0 mb-5" style="border-bottom: 3px solid #3498db!important;" data-aos="fade-up">
+              <div style="background-color: #3498db; width: 60px; height: 60px; border-radius: 50px; margin: 0 auto; margin-top: -30px;">
+                <i class="fa fa-quote-left fa-2x card-img-top rounded-circle text-white" style="margin-top: 13px;" aria-hidden="true"></i>
+              </div>
+              <div class="card-body blockquote">
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer bibendum enim eu nibh finibus</p>
+                <footer class="blockquote-footer mt-2"><small><i>Mohamed Nady</i></small></footer>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card bg-light text-center border-0 mb-5" style="border-bottom: 3px solid #3498db!important;" data-aos="fade-up">
+              <div style="background-color: #3498db; width: 60px; height: 60px; border-radius: 50px; margin: 0 auto; margin-top: -30px;">
+                <i class="fa fa-quote-left fa-2x card-img-top rounded-circle text-white" style="margin-top: 13px;" aria-hidden="true"></i>
+              </div>
+              <div class="card-body blockquote">
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer bibendum enim eu nibh finibus</p>
+                <footer class="blockquote-footer mt-2"><small><i>Mohamed Nady</i></small></footer>
+              </div>
+            </div>
+          </div>
         </div>
 
       </div>
-    </section><!-- End Testimonials Section -->
+    </section>
+    <!--------------------------------------- End Testimonials Section ----------------------------------->
 
-    <!-- ======= Portfolio Section ======= -->
+
+
+
+
+
+    <!-- ======================================== Portfolio Section ==================================== -->
     <section id="portfolio" class="portfolio">
       <div class="container">
 
@@ -828,9 +703,13 @@
         </div>
 
       </div>
-    </section><!-- End Portfolio Section -->
+    </section>
+    <!-------------------------------------- End Portfolio Section ------------------------------------->
 
-    <!-- ======= Team Section ======= -->
+
+
+
+    <!-- ======================================== Team Section ====================================== -->
     <section id="team" class="team section-bg">
       <div class="container">
 
@@ -917,77 +796,11 @@
 
       </div>
     </section>
-    <!-- End Team Section -->
+    <!--------------------------------------- End Team Section ---------------------------------->
 
-    <!-- ======= Pricing Section ======= -->
-    <!-- <section id="pricing" class="pricing">
-      <div class="container">
 
-        <div class="section-title">
-          <h2>Pricing</h2>
-          <p>Sit sint consectetur velit nemo qui impedit suscipit alias ea</p>
-        </div>
 
-        <div class="row">
-
-          <div class="col-lg-4 col-md-6">
-            <div class="box" data-aos="zoom-in-right" data-aos-delay="200">
-              <h3>Free</h3>
-              <h4><sup>$</sup>0<span> / month</span></h4>
-              <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li class="na">Pharetra massa</li>
-                <li class="na">Massa ultricies mi</li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Buy Now</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 mt-4 mt-md-0">
-            <div class="box recommended" data-aos="zoom-in" data-aos-delay="100">
-              <h3>Business</h3>
-              <h4><sup>$</sup>19<span> / month</span></h4>
-              <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li>Pharetra massa</li>
-                <li class="na">Massa ultricies mi</li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Buy Now</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 mt-4 mt-lg-0">
-            <div class="box" data-aos="zoom-in-left" data-aos-delay="200">
-              <h3>Developer</h3>
-              <h4><sup>$</sup>29<span> / month</span></h4>
-              <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li>Pharetra massa</li>
-                <li>Massa ultricies mi</li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Buy Now</a>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section> -->
-    <!-- End Pricing Section -->
-
-    <!-- ======= F.A.Q Section ======= -->
+    <!-- ===================================== F.A.Q Section ================================= -->
     <section id="faq" class="faq">
       <div class="container">
 
@@ -1065,9 +878,13 @@
         </div><!-- End F.A.Q Item-->
 
       </div>
-    </section><!-- End F.A.Q Section -->
+    </section>
+    <!------------------------------------- End F.A.Q Section -------------------------------------->
 
-    <!-- ======= Contact Section ======= -->
+
+
+
+    <!-- =================================== Contact Section ==================================== -->
     <section id="contact" class="contact">
       <div class="container">
 
@@ -1137,25 +954,26 @@
         </div>
 
       </div>
-    </section><!-- End Contact Section -->
+    </section>
+    <!-------------------------------- End Contact Section ----------------------------------->
 
   </main>
-  <!-- End #main -->
+  <!--------------------------------------- End #main ---------------------------------------->
 
   <!-- ======= Footer ======= -->
   <?php include 'footer.php' ?>
   <!-- End Footer -->
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/aos/aos.js"></script>
+  <!-- <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/purecounter/purecounter.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script> -->
 
   <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <!-- <script src="assets/js/main.js"></script> -->
 
 
 </body>
