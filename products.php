@@ -74,17 +74,7 @@
                 <div class="row content">
                         <div class="col-lg-6" data-aos="fade-up" data-aos-delay="150">
                             <p>
-                               <?php 
-                               include('class/test.php');
-                               $add = new DBClass();
-                               
-                               $s=$add->getData();
-
-                               while($r=mysqli_fetch_array($s))
-                                       {
-                                        echo $r['email'];
-                                       }
-                                ?> 
+                               swdd
                             </p>
                         </div>
                     </div> 
@@ -158,16 +148,6 @@
                     </div>
                 </div>
             </div>
-
-            
-
-
-
-
-
-
-
-
         </div>
         <!-- End Container  -->
     </main>

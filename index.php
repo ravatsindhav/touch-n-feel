@@ -71,21 +71,21 @@
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="https://wallpaperaccess.com/full/2461288.jpg" class="slider-img" alt="...">
+          <img src="img/core-img/feather.jpg" class="slider-img" alt="...">
           <div class="carousel-caption d-none d-md-block">
-            <h5 style="padding-bottom: 160px;">First slide label</h5>
+            <!-- <h5 style="padding-bottom: 160px;">First slide label</h5> -->
           </div>
         </div>
         <div class="carousel-item">
-          <img src="https://images8.alphacoders.com/431/thumb-1920-431230.jpg" class="slider-img">
+          <img src="img/core-img/feather.jpg" class="slider-img">
           <div class="carousel-caption d-none d-md-block">
-            <h5 style="padding-bottom: 120px;">Second slide label</h5>
+            <!-- <h5 style="padding-bottom: 120px;">Second slide label</h5> -->
           </div>
         </div>
         <div class="carousel-item">
-          <img src="https://s1.1zoom.me/big7/116/Orc_Warriors_Men_499374.jpg" class="slider-img">
+          <img src="img/core-img/feather.jpg" class="slider-img">
           <div class="carousel-caption d-none d-md-block">
-            <h5 style="padding-bottom: 120px;">Third slide label</h5>
+            <!-- <h5 style="padding-bottom: 120px;">Third slide label</h5> -->
           </div>
         </div>
       </div>
@@ -111,27 +111,27 @@
         <div class="row">
 
           <div class="col-lg-2 col-md-4 col-6">
-            <img src="assets/img/clients/aditya-birla.jpg" class="img-fluid" alt="" data-aos="zoom-in">
+            <img src="assets/img/clients/aditya-birla.jpg" class="img-fluid" alt="" >
           </div>
 
           <div class="col-lg-2 col-md-4 col-6">
-            <img src="assets/img/clients/tata power.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="100">
+            <img src="assets/img/clients/tata power.png" class="img-fluid" alt="" >
           </div>
 
           <div class="col-lg-2 col-md-4 col-6">
-            <img src="assets/img/clients/RIL_Logo.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="200">
+            <img src="assets/img/clients/RIL_Logo.png" class="img-fluid" alt="" >
           </div>
 
           <div class="col-lg-2 col-md-4 col-6">
-            <img src="assets/img/clients/Ultratechcement.webp" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="300">
+            <img src="assets/img/clients/Ultratechcement.webp" class="img-fluid" alt="" >
           </div>
 
           <div class="col-lg-2 col-md-4 col-6">
-            <img src="assets/img/clients/mc-chandigardh-logo.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="400">
+            <img src="assets/img/clients/mc-chandigardh-logo.png" class="img-fluid" alt="" >
           </div>
 
           <div class="col-lg-2 col-md-4 col-6">
-            <img src="assets/img/clients/charbhuja group.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="500">
+            <img src="assets/img/clients/charbhuja group.png" class="img-fluid" alt="">
           </div>
 
         </div>
@@ -156,7 +156,7 @@
         </div>
 
         <div class="row content">
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="150">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="10">
             <p>
               We are pleased to introduce <b style="color:#026e99;"> Touch & Feel Electro Systems </b> , MSME Certified
               Company, which specializes in advanced Electronics Security,
@@ -174,7 +174,7 @@
               <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li> -->
             </ul>
           </div>
-          <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-up" data-aos-delay="300">
+          <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-up" data-aos-delay="30">
             <p>
               <b style="color:#026e99;"> Touch & Feel Electro Systems</b>, incorporated in 2018, with vast field
               experience, technical expertise,
@@ -202,7 +202,7 @@
       <div class="container">
 
         <div class="row">
-          <div class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-xl-start" data-aos="fade-right" data-aos-delay="150">
+          <div class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-xl-start" data-aos="fade-right" data-aos-delay="80">
             <img src="assets/img/counts-img.svg" alt="" class="img-fluid">
           </div>
 
@@ -220,7 +220,7 @@
                 <div class="col-md-6 d-md-flex align-items-md-stretch">
                   <div class="count-box">
                     <i class="bi bi-journal-richtext"></i>
-                    <span data-purecounter-start="0" data-purecounter-end="85" data-purecounter-duration="1" class="purecounter"></span>
+                    <span data-purecounter-start="100" data-purecounter-end="1000" data-purecounter-duration="100" class="purecounter"></span>
                     <p><strong>Projects</strong> adipisci atque cum quia aspernatur totam laudantium et quia dere tan
                     </p>
                   </div>
@@ -801,7 +801,7 @@
 
 
     <!-- ===================================== F.A.Q Section ================================= -->
-    <section id="faq" class="faq">
+    <!-- <section id="faq" class="faq">
       <div class="container">
 
         <div class="section-title" data-aos="fade-up">
@@ -819,7 +819,7 @@
               Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
             </p>
           </div>
-        </div><!-- End F.A.Q Item-->
+        </div>
 
         <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
           <div class="col-lg-5">
@@ -833,7 +833,7 @@
               ullamcorper dignissim.
             </p>
           </div>
-        </div><!-- End F.A.Q Item-->
+        </div>
 
         <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
           <div class="col-lg-5">
@@ -847,38 +847,12 @@
               Lectus urna duis convallis convallis tellus.
             </p>
           </div>
-        </div><!-- End F.A.Q Item-->
+        </div>
 
-        <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
-          <div class="col-lg-5">
-            <i class="ri-question-line"></i>
-            <h4>Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?</h4>
-          </div>
-          <div class="col-lg-7">
-            <p>
-              Aperiam itaque sit optio et deleniti eos nihil quidem cumque. Voluptas dolorum accusantium sunt sit enim.
-              Provident consequuntur quam aut reiciendis qui rerum dolorem sit odio. Repellat assumenda soluta sunt
-              pariatur error doloribus fuga.
-            </p>
-          </div>
-        </div><!-- End F.A.Q Item-->
-
-        <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="500">
-          <div class="col-lg-5">
-            <i class="ri-question-line"></i>
-            <h4>Tempus quam pellentesque nec nam aliquam sem et tortor consequat?</h4>
-          </div>
-          <div class="col-lg-7">
-            <p>
-              Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel
-              risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida
-              quis blandit turpis cursus in
-            </p>
-          </div>
-        </div><!-- End F.A.Q Item-->
+        
 
       </div>
-    </section>
+    </section> -->
     <!------------------------------------- End F.A.Q Section -------------------------------------->
 
 
@@ -964,13 +938,13 @@
   <?php include 'footer.php' ?>
   <!-- End Footer -->
   <!-- Vendor JS Files -->
-  <!-- <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/purecounter/purecounter.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script> -->
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
   <!-- Template Main JS File -->
   <!-- <script src="assets/js/main.js"></script> -->

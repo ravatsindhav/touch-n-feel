@@ -55,7 +55,7 @@
                 <ul>
                     <li><a class="nav-link scrollto" href="product.php">Products</a></li>
                     <li><a class="nav-link scrollto" href="category.php">Category</a></li>
-                    
+                    <li><a class="nav-link scrollto" href="client.php">Client</a></li>
                     <li><a class="nav-link scrollto" href="#">Log Out</a></li>
                 </ul>
 

@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Category | Complete Security Solon</title>
+    <title>Client | Complete Security Solon</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -32,7 +32,7 @@
     <!-- ================================================================ Category Page ================================================================== -->
     <section class="container mt-5" style="margin-top: 90px;">
         <!------------------------ Add Product & Category Dropdown --------------------->
-        <div class="row mt-5" data-aos="fade-up">
+        <div class="row mt-5"  data-aos="fade-up">
             <div class="col-md-12">
                 <div class="d-grid gap-2">
                     <button class="alert alert-success rounded-0" type="button">All Category</button>
@@ -53,9 +53,7 @@
             </div>
             <div class="col-md-3">
                 <div class="d-grid gap-2">
-                    <button class="btn btn-success rounded-0" type="button" data-bs-toggle="modal" href="#AddModel" role="button">
-                        Add New Category
-                    </button>
+                    <button class="btn btn-success rounded-0" type="button">Add New Category</button>
                 </div>
             </div>
         </div>
@@ -115,56 +113,6 @@
         </div>
     </section>
 
-
-    <!-------- Edit Product Model --------->
-
-    <div class="modal fade bd-example-modal-lg" id="AddModel" aria-labelledby="exampleModalToggleLabel">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title text-success" id="exampleModalToggleLabel">Add Category</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <section class="container">
-                        <form action="" name="addproduct" class="addimg-form" method="post">
-                            <div class="row" style="margin-top: -50px;">
-
-                                <div class="col-md-12 mt-4">
-                                    <div class="mb-3">
-                                        <input type="text" name="name" class="form-control rounded-0 bg-light total-input-border" id="exampleFormControlInput1" required placeholder="Enter Category Name...">
-                                    </div>
-
-                                    <div class="mb-3">
-                                        <textarea name="detail" class="form-control rounded-0 bg-light total-input-border" id="exampleFormControlTextarea1" rows="3" required placeholder="Enter Category Detail..."></textarea>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="row justify-content-center">
-                                        <button type="submit" name="btn_submit" class="btn btn-success rounded-0 btn-sm save-btn-success w-50">Save</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                    </section>
-                </div>
-            </div>
-        </div>
-    </div>
-
-<?php 
- if (isset($_POST['btn_submit'])){
-    $prod_name = $_POST['name'];
-    $prod_detail = $_POST['detail'];
-    if($prod_name!="" && $prod_detail!=""){
-
-    }
-
- }
-?>
 
 
     <!-- =================== Footer ================== -->

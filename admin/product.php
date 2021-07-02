@@ -232,8 +232,8 @@
 
   <!-------- Edit Product Model --------->
 
-  <div class="modal fade" id="EditProductModel" aria-labelledby="exampleModalToggleLabel">
-    <div class="modal-dialog modal-dialog-centered">
+  <div class="modal fade bd-example-modal-lg" id="EditProductModel" aria-labelledby="exampleModalToggleLabel">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title text-success" id="exampleModalToggleLabel">&#9824; Edit Product</h5>
@@ -280,7 +280,7 @@
           </section>
 
           <!-- ========== Add Product Page ========== -->
-          <section class="container">
+          <!-- <section class="container">
 
             <div class="row" style="margin-top: -50px;">
               <div class="col-md-12">
@@ -319,7 +319,7 @@
               </div>
             </div>
 
-          </section>
+          </section> -->
           <!-- ========== Add Product Page ========== -->
         </div>
       </div>
@@ -328,7 +328,7 @@
 
 
 
-  <!-------- Edit Product Model --------->
+  <!-------- Delete Product Model --------->
 
   <div class="modal fade" id="DeleteProductModel" aria-labelledby="exampleModalToggleLabel2">
     <div class="modal-dialog modal-dialog-centered">
