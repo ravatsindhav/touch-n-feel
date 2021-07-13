@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Products | Complete Security Solon</title>
+    <title>Add Products | Complete Security Solon</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -47,13 +47,18 @@
                     </div>
                     <div class="mb-3">
                         <select class="form-select rounded-0 bg-light total-input-border" required id="productcategory" name="product_category">
-                            <option selected [value]="null">Choose Category...</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
+                            <?php
+                            $cat_res = $category_obj->getAllcategory();
+                            while ($category_arr = mysqli_fetch_array($cat_res)) {
+                                ?>
+                                <option value="<?php echo $category_arr['id'];?>"><?php echo $category_arr['name'];?></option>
+                                <?php
+                            }
+                            ?>
+                            
                         </select>
                     </div>
-                    <div class="mb-3"> 
+                    <div class="mb-3">
                         <textarea class="form-control rounded-0 bg-light total-input-border" required id="productdetail" name="product_detail" rows="3" placeholder="Enter Product Description..."></textarea>
                     </div>
                 </div>
@@ -65,7 +70,7 @@
                                 <i class="fas fa-paperclip fa-2x" style="transform: rotate(-43deg);"></i>
                                 <strong id="uploaded-File">Upload Image...</strong>
                             </label>
-                            <input id='input-file' name="product_img" type='file' />
+                            <input id='input-file' accept="image/*" name="product_img" type='file' />
                             <!-- <div id="file-upload-filename"></div> -->
                         </div>
                     </div>
@@ -88,76 +93,85 @@
 
     </section>
     <!-- for File Upload Name Script -->
-<script>
-var input = document.getElementById( 'input-file' );
-var infoArea = document.getElementById( 'uploaded-File' );
+    <script>
+        var input = document.getElementById('input-file');
+        var infoArea = document.getElementById('uploaded-File');
 
-input.addEventListener( 'change', showFileName );
+        input.addEventListener('change', showFileName);
 
-function showFileName( event ) {
-  
-  // the change event gives us the input it occurred in 
-  var input = event.srcElement;
-  
-  // the input has an array of files in the `files` property, each one has a name that you can use. We're just using the name here.
-  var fileName = input.files[0].name;
-  
-  // use fileName however fits your app best, i.e. add it into a div
-  infoArea.textContent = 'File Name: ' + fileName;
-}
-</script>
+        function showFileName(event) {
+
+            // the change event gives us the input it occurred in 
+            var input = event.srcElement;
+
+            // the input has an array of files in the `files` property, each one has a name that you can use. We're just using the name here.
+            var fileName = input.files[0].name;
+
+            // use fileName however fits your app best, i.e. add it into a div
+            infoArea.textContent = 'File Name: ' + fileName;
+        }
+    </script>
     <?php
     if (isset($_POST['btn_submit'])) {
 
         $prod_name = $_POST['product_name'];
         $prod_detail = $_POST['product_detail'];
         $prod_category = $_POST['product_category'];
-       
-  if($prod_name!="" && $prod_detail!="" && $prod_category!=""){
-    if($_FILES["product_img"]["error"] == 4) {
-        ?>
-        <script>
-            alert('please Select File');
-        </script>
-    <?php
-        }
-        else {
-            ?>
-            <script>
-                alert('hey');
-            </script>
-        <?php
-            }
-  }
-        include('class/Product_Class.php');
-        $product_obj = new Product_Class();
 
-        $s = $product_obj->check_product_name($prod_name);
-
-        if ($r = mysqli_fetch_array($s)) {
+        if ($prod_name != "" && $prod_detail != "" && $prod_category != "") {
+            if ($_FILES["product_img"]["error"] == 4) {
     ?>
-            <script>
-                alert('Product is Exist')
-            </script>
-            <?php
-        } else {
-            $b = $_FILES["product_img"]["tmp_name"];
-
-            // move_uploaded_file($b, $prod_img);
-            // $res = $product_obj->add_product($prod_name, $prod_detail, $prod_category, $prod_img);
-            $res=0;
-            if ($res == 1) {
-            ?>
                 <script>
-                    alert('Product Successfully Added');
+                    alert('please Select Product Image');
                 </script>
-            <?php
+                <?php
             } else {
-            ?>
-                <script>
-                    alert('Failed to Add Product');
-                </script>
+
+                require_once "class/Product_Class.php";
+                $product_obj = new Product_Class();
+
+                $s = $product_obj->check_product_name($prod_name);
+
+                if ($r = mysqli_fetch_array($s)) {
+                ?>
+                    <script>
+                        alert('Product is Exist')
+                    </script>
+                    <?php
+                } else {
+                    $b = $_FILES["product_img"]["tmp_name"];
+                    $prod_img = "../img/product/" . time() . "_" . $_FILES["product_img"]["name"];
+                    $file_res = move_uploaded_file($b, $prod_img);
+                    if ($file_res == 1) {
+                        $res = $product_obj->add_product($prod_name, $prod_detail, $prod_category, $prod_img);
+                        if ($res) {
+                            $prod_name = "";
+                            $prod_detail = "";
+                            $prod_category = "";
+                            $prod_img = null;
+                            $b = null;
+
+                    ?>
+                            <script>
+                                alert('Product Successfully Added');
+                            </script>
+                        <?php
+                        echo "<meta http-equiv='refresh' content='0'>";
+                        } else {
+                        ?>
+                            <script>
+                                alert('Failed to Add Product');
+                            </script>
+                        <?php
+                        }
+                    } else {
+                        ?>
+                        <script>
+                            alert('Failed to Upload Image');
+                        </script>
     <?php
+                    }
+                }
             }
         }
     }
@@ -170,3 +184,6 @@ function showFileName( event ) {
 </body>
 
 </html>
+<?php 
+//unset($product_obj);
+?>

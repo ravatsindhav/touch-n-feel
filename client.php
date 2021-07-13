@@ -44,8 +44,14 @@
 
     <!-- ======= Header ======= -->
     <?php include 'header.php' ?>
+
     <!-- End Header -->
 
+    <?php
+    require_once "admin/class/Client_Class.php";
+    $client_obj = new Client_Class();
+    $client_res = $client_obj->getAllclient();
+    ?>
 
 
     <main id="main">
@@ -58,34 +64,25 @@
 
 
             <div class="row">
-                <div class="col-md-3">
-                    <div class="card rounded-0 border-0 shadow-sm mb-4">
-                        <div class="row justify-content-center">
-                            <img src="https://edsystemsindia.com/wp-content/uploads/2018/12/New-Project-90-200x200.png" style="width: 280px; height: 240px;">
+                <?php
+                while ($client_arr = mysqli_fetch_array($client_res)) {
+                ?>
+                    <div class="col-md-3">
+                        <div class="card rounded-0 border-0 shadow-sm mb-4">
+                            <div class="row justify-content-center">
+                                <img src="<?php echo substr($client_arr['image'],3);?>" style="width: 280px !important; height: 240px !important;">
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-3">
+                <?php } ?>
+                <!-- <div class="col-md-3">
                     <div class="card rounded-0 border-0 shadow-sm  mb-4">
                         <div class="row justify-content-center p-0">
                             <img src="https://edsystemsindia.com/wp-content/uploads/2018/12/New-Project-91-1-200x200.png" style="width: 280px; height: 240px;">
                         </div>
                     </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card rounded-0 border-0 shadow-sm  mb-4">
-                        <div class="row justify-content-center p-0">
-                            <img src="https://edsystemsindia.com/wp-content/uploads/2018/12/New-Project-92-200x200.png" style="width: 280px; height: 240px;">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card rounded-0 border-0 shadow-sm  mb-4">
-                        <div class="row justify-content-center p-0">
-                            <img src="https://edsystemsindia.com/wp-content/uploads/2018/12/New-Project-93-1-200x200.png" style="width: 280px; height: 240px;">
-                        </div>
-                    </div>
-                </div>
+                </div> -->
+
             </div>
 
         </div>

@@ -42,6 +42,12 @@
 
 <body>
 
+    <?php
+    //fetch Category name
+    include('admin/class/Category_Class.php');
+    $category_obj = new Category_Class();
+    $res = $category_obj->getAllcategory();
+    ?>
     <!-- ======= Header ======= -->
     <header id="header" class="fixed-top d-flex align-items-center">
         <div class="container d-flex align-items-center justify-content-between">
@@ -64,10 +70,14 @@
 
                         <li class="dropdown"><a href="#"><span>Products</span> <i class="bi bi-chevron-down"></i></a>
                             <ul>
-                                <li><a href="products.php">All Products</a></li>
-                                <li><a href="#">Drop Down 2</a></li>
-                                <li><a href="#">Drop Down 3</a></li>
-                                <li><a href="#">Drop Down 4</a></li>
+                            <li><a href="products.php?cat_id=0">All Products</a></li>
+                                <?php
+                                while ($category_arr = mysqli_fetch_array($res)) {
+                                ?>
+                                    <li><a href="products.php?cat_id=<?php echo $category_arr['id']; ?>"><?php echo $category_arr['name']; ?></a></li>
+                                <?php
+                                }
+                                ?>
                             </ul>
                         </li>
                         <li><a class="nav-link scrollto" href="client.php">Clients</a></li>
@@ -116,7 +126,7 @@
                         if (basename($_SERVER['PHP_SELF']) == 'products.php') {
                         ?>
 
-                            <li class="dropdown"><a class="active" href="#"><span>Products</span> <i class="bi bi-chevron-down"></i></a>
+                            <li class="dropdown"><a class="active" href=""><span>Products</span> <i class="bi bi-chevron-down"></i></a>
                             <?php } else {
                             ?>
                             <li class="dropdown"><a href="#"><span>Products</span> <i class="bi bi-chevron-down"></i></a>
@@ -124,11 +134,17 @@
                         } ?>
                             <ul>
 
-                                <li><a href="products.php">All Products</a></li>
+                                <li><a href="products.php?cat_id=0">All Products</a></li>
+                                <?php
+                                while ($category_arr = mysqli_fetch_array($res)) {
+                                ?>
+                                    <li><a href="products.php?cat_id=<?php echo $category_arr['id']; ?>"><?php echo $category_arr['name']; ?></a></li>
+                                <?php
+                                }
+                                ?>
 
-                                <li><a href="#">Drop Down 2</a></li>
-                                <li><a href="#">Drop Down 3</a></li>
-                                <li><a href="#">Drop Down 4</a></li>
+                                <!-- <li><a href="#">Drop Down 3</a></li>
+                                <li><a href="#">Drop Down 4</a></li> -->
                             </ul>
                             </li>
 

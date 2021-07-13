@@ -62,97 +62,89 @@
 
 
     <main id="main">
-        <!-- ======= About Us Section ======= -->
-        
-        <section id="product" class="about">
-            <div class="container" style="margin-top: 43px;">
-                <div class="section-title" data-aos="fade-up">
-                    <h2 class="d-none d-md-block">Products</h2>
-                    <h2 class="d-sm-none" style="font-size:22px;">Company Overview</h2>
-                </div>
-
-                <div class="row content">
-                        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="150">
-                            <p>
-                               swdd
-                            </p>
-                        </div>
-                    </div> 
-            </div>
-        </section>
-       
-
+        <!-- ======= Product Section ======= -->
         <!-- Container Start -->
         <div class="container" style="margin-top:155px;">
-            <div class="section-title" data-aos="fade-up">
+            <div class="section-title">
                 <h2 class="d-none d-md-block">Products</h2>
-                <h2 class="d-sm-none" style="font-size:22px;">Company Overview</h2>
+                <h2 class="d-sm-none" style="font-size:22px;">Products</h2>
             </div>
 
-            <div class="row content">
-                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="150">
-                    <div class="card">
-                        <img src="https://wallpapercave.com/wp/wp3264044.jpg" class="card-img-top product-img" alt="...">
-                        <div class="card-body">
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="150">
-                    <div class="card">
-                        <img src="https://i.pinimg.com/564x/4f/6d/05/4f6d052bb1b26150115888ea06d4c106.jpg" class="card-img-top product-img" alt="...">
-                        <div class="card-body">
-                            <div class="row">
-                                <ul>
-                                    <li style="list-style: none;">
-                                        <i class="fa fa-location-arrow fa-icon-custom"></i>
-                                        <span style="font-size: 14pt;color:black;"> CCTV Video Surveillance</span>
-                                    </li>
-                                </ul>
+            <?php
+            include('admin/class/Product_Class.php');
+            $product_obj = new Product_Class();
+            $categoryid;
+            if (empty($_GET['cat_id'])) {
+                $categoryid = 0;
+            } else {
+                $categoryid = $_GET['cat_id'];
+            }
+            $prod_res = null;
+            if (is_numeric($categoryid)) {
+                $prod_res = $product_obj->getProductByCategory($categoryid);
+            } else {
+                $prod_res = $product_obj->getProductByCategory(0);
+            }
+            if ($prod_res != null) {
+
+                while ($product_arr = mysqli_fetch_array($prod_res)) {
+            ?>
+                    <!-- Product View -->
+                    <div class="card p-3 rounded-0 border-0 bg-white">
+                        <div class="row mt-1">
+                            <div class="col-md-12">
+                                <h4 class="alert alert-default text-light text-center p-2 rounded-0 ml-3" style="background: #3498db;"><?php echo $product_arr['name']; ?></h4>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-
-
-
-            <div class="row mt-5 mb-5">
-                <div class="col-md-12">
-                    <h4 class="alert alert-default text-light text-center p-2 rounded-0 ml-3" style="background: #3498db;">Partial List of our Valued Customers</h4>
-                </div>
-                <div class="col-md-12">
-                    <div class="card p-3 rounded-0 border-0 bg-white" data-aos="fade-up">
                         <div class="row">
-                            <div class="col-md-6">
+                            <?php
+                            $dt = $product_arr['detail'];
+                            $detail = explode('$', $dt)
+                            ?>
+                            <div class="col-md-6 col-sm-12">
                                 <ul class="list-decoration list-decoration--gradient">
-                                    <li class="text-muted"> IP CCTV Dome cameras are mainly used for indoor applications.</li>
-                                    <li class="text-muted"> High definition (HD) resolutions like 2 / 3 / 4/ 5 / 8 / 12 and higher Megapixels</li>
-                                    <li class="text-muted"> Advance high compression technology like H.265, H.265+, H.264, H.264+, etc.</li>
-                                    <li class="text-muted"> IR Night vision capability</li>
-                                    <li class="text-muted"> Fixed and Motorized zoom lens</li>
-                                    <li class="text-muted"> Vandal-resistant and Weather-proof IP66 / IP67 rated housings</li>
-                                    <li class="text-muted"> Advance features like WDR, 3D DNR, BLC, AGC, AWB, etc.</li>
-                                    <li class="text-muted"> 12V DC and PoE supported</li>
-                                    <li class="text-muted"> Optional built-in audio capability</li>
-                                    <li class="text-muted"> Optional built-in SD card storage</li>
-                                    <li class="text-muted"> Optional built-in Wi-fi</li>
+                                    <?php
+                                    foreach ($detail as $item) {
+                                    ?>
+                                        <li class="text-muted"><?php echo "$item"; ?></li>
+                                    <?php
+                                    }
+                                    ?>
+
+                                    <!-- <li class="text-muted"> High definition (HD) resolutions like 2 / 3 / 4/ 5 / 8 / 12 and higher Megapixels</li>
+                                        <li class="text-muted"> Advance high compression technology like H.265, H.265+, H.264, H.264+, etc.</li>
+                                        <li class="text-muted"> IR Night vision capability</li>
+                                        <li class="text-muted"> Fixed and Motorized zoom lens</li>
+                                        <li class="text-muted"> Vandal-resistant and Weather-proof IP66 / IP67 rated housings</li>
+                                        <li class="text-muted"> Advance features like WDR, 3D DNR, BLC, AGC, AWB, etc.</li>
+                                        <li class="text-muted"> 12V DC and PoE supported</li>
+                                        <li class="text-muted"> Optional built-in audio capability</li>
+                                        <li class="text-muted"> Optional built-in SD card storage</li>
+                                        <li class="text-muted"> Optional built-in Wi-fi</li> -->
                                 </ul>
                             </div>
-                            <div class="col-md-6">
-                                <img src="https://edsystemsindia.com/wp-content/uploads/2016/01/cctv1.png" class="image-set-1">
+                            <div class="col-md-6 col-sm-12">
+                                <img src="<?php echo substr($product_arr['image'],3);?>" style="width:620px !important;height:320px !important;" class="image-set-1">
                                 <ul class="list-decoration list-decoration--gradient">
                                 </ul>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
+                    <!-- End Product View -->
+
+            <?php
+                }
+            }
+
+            ?>
+
+
         </div>
         <!-- End Container  -->
     </main>
     <!-- End #main -->
-
+    <br />
+    <br />
     <!-- ======= Footer ======= -->
     <?php include 'footer.php' ?>
     <!-- End Footer -->

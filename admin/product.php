@@ -54,79 +54,115 @@
 <body>
 
   <!-- ================== Header ================ -->
-  <?php include 'header.php' ?>
+  <?php
+  include 'header.php';
+ 
+  ?>
   <!------------------ End Header ----------------->
 
 
+  <section class="container mt-5" style="margin-top: 90px;">
+    <!------------------ Product & Category Fetch ----------------->
+    <?php
+    require_once "class/Product_Class.php";
+    $product_obj = new Product_Class();
+    $categoryid;
+    if (empty($_GET['cat_id'])) {
+      $categoryid = 0;
+    } else {
+      $categoryid = $_GET['cat_id'];
+    }
 
-  <section class="container mt-5">
+    if (is_numeric($categoryid)) {
+      $prod_res = $product_obj->getProductByCategory($categoryid);
+    } else {
+      $prod_res = $product_obj->getProductByCategory(0);
+    }
+
+    ?>
+
+    <!--- --------------- End Product & Category Fetch ----------------->
+
 
     <!------------------------ Add Product & Category Dropdown --------------------->
-    <div class="row mt-3" style="margin-top: 90px;" data-aos="fade-up">
-      <div class="col-md-12">
+    <div class="row mt-3" style="margin-top: 90px;">
+      <div class="col-md-10">
         <div class="d-grid gap-2">
-          <button class="alert alert-success rounded-0" type="button">All Products</button>
+          <button class="btn btn-success rounded-0" style="background-color:#D4EDDA;color:green;" type="button">All Products</button>
         </div>
       </div>
-    </div>
-    <div class="row mt-3" data-aos="fade-up">
-      <div class="col-md-9">
-        <div class="input-group mb-3">
-          <select class="form-select border-success bg-light rounded-0" id="inputGroupSelect01">
-            <option selected>Choose Category...</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
-          </select>
-          <label class="input-group-text btn btn-success rounded-0 px-4" for="inputGroupSelect01">Apply</label>
-        </div>
-      </div>
-      <div class="col-md-3">
+      <div class="col-md-2">
         <div class="d-grid gap-2">
           <button class="btn btn-success rounded-0" type="button"><a style="color:white;" href="add_product.php">Add New Product</a></button>
         </div>
       </div>
     </div>
+    <!-- <div class="row mt-3">
+      <div class="col-md-12">
+        <div class="d-grid gap-2">
+          <button class="btn btn-success rounded-0" type="button"><a style="color:white;" href="add_product.php">Add New Product</a></button>
+        </div>
+      </div>
+    </div> -->
     <!---- Add Product & Category Dropdown ----->
 
+    <!-- Product Show -->
+    <?php
+    while ($product_arr = mysqli_fetch_array($prod_res)) {
+    ?>
 
-    <!------------------------ Product Detail & Image --------------------->
-    <div class="card border-light" style="background-color: #f5f5f5;" data-aos="fade-up">
+      <!------------------------ Product Detail & Image --------------------->
+      <div class="card border-light" style="background-color: #f5f5f5;">
 
-      <div class="row m-2 p-1 mt-3" style="background-color: #D4EDDA;">
-        <div class="col-9">
-          <p class="mt-1 text-success item-heading">Partial List of our Valued Customers</p>
+        <div class="row m-2 p-1 mt-3" style="background-color: #D4EDDA;">
+          <div class="col-9">
+            <p class="mt-1 text-success item-heading"><?php echo $product_arr['name']; ?></p>
+          </div>
+          <div class="col-3">
+            <!-- <button type="button" class="btn btn-outline-danger btn-right">
+              <i class="fas fa-trash-alt icon-size" data-bs-toggle="modal" href="#DeleteProductModel" role="button"></i>
+            </button> -->
+            <button type="button" class="btn btn-outline-light btn-right">
+              <a class="fas fa-edit icon-size text-success"  href="edit_product.php?id=<?php echo $product_arr['id'];?>" role="button"></a>
+            </button>
+          </div>
         </div>
-        <div class="col-3">
-          <button type="button" class="btn btn-outline-danger btn-right">
-            <i class="fas fa-trash-alt icon-size" data-bs-toggle="modal" href="#DeleteProductModel" role="button"></i>
-          </button>
-          <button type="button" class="btn btn-outline-success btn-right">
-            <i class="fas fa-edit icon-size" data-bs-toggle="modal" href="#EditProductModel" role="button"></i>
-          </button>
+        <?php
+        $dt = $product_arr['detail'];
+        $detail = explode('$', $dt)
+        ?>
+        <div class="row">
+          <div class="col-md-6">
+            <ul class="list-decoration list-decoration--gradient">
+              <?php
+              foreach ($detail as $item) {
+              ?>
+                <li class="text-muted"><?php echo "$item"; ?></li>
+              <?php
+              }
+              ?>
+              <!-- <li class="text-muted"> High definition (HD) resolutions like 2 / 3 / 4/ 5 / 8 / 12 and higher Megapixels</li>
+              <li class="text-muted"> Advance high compression technology like H.265, H.265+, H.264, H.264+, etc.</li>
+              <li class="text-muted"> IR Night vision capability</li>
+              <li class="text-muted"> Fixed and Motorized zoom lens</li>
+              <li class="text-muted"> Vandal-resistant and Weather-proof IP66 / IP67 rated housings</li> -->
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <ul class="list-decoration list-decoration--gradient">
+            <img src="<?php echo $product_arr['image']; ?>" style="width:620px !important;height:320px !important;"  class="image-set-1">
+            </ul>
+          </div>
         </div>
+
       </div>
+      <!------- Product Detail & Image ------->
 
-      <div class="row" data-aos="fade-up">
-        <div class="col-md-6">
-          <ul class="list-decoration list-decoration--gradient">
-            <li class="text-muted"> IP CCTV Dome cameras are mainly used for indoor applications.</li>
-            <li class="text-muted"> High definition (HD) resolutions like 2 / 3 / 4/ 5 / 8 / 12 and higher Megapixels</li>
-            <li class="text-muted"> Advance high compression technology like H.265, H.265+, H.264, H.264+, etc.</li>
-            <li class="text-muted"> IR Night vision capability</li>
-            <li class="text-muted"> Fixed and Motorized zoom lens</li>
-            <li class="text-muted"> Vandal-resistant and Weather-proof IP66 / IP67 rated housings</li>
-          </ul>
-        </div>
-        <div class="col-md-6">
-          <img src="https://edsystemsindia.com/wp-content/uploads/2016/01/cctv1.png" class="image-set-1">
-          <ul class="list-decoration list-decoration--gradient">
-          </ul>
-        </div>
-      </div>
+    <?php
+    }
+    ?>
 
-    </div>
-    <!------- Product Detail & Image ------->
+
 
   </section>
 
@@ -136,7 +172,7 @@
 
 
   <!-- ============= Edit Product Page ============ -->
-  <section class="container">
+  <!-- <section class="container">
 
     <div class="row">
 
@@ -176,10 +212,10 @@
 
 
 
-  </section>
+  </section> -->
 
   <!-- ============= Add Product Page ==============-->
-  <section class="container">
+  <!-- <section class="container">
 
     <div class="row">
 
@@ -221,7 +257,7 @@
       </div>
     </div>
 
-  </section>
+  </section> -->
 
 
 
@@ -368,3 +404,6 @@
 </body>
 
 </html>
+<?php 
+//unset($product_obj);
+?>
