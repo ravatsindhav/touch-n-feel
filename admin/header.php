@@ -42,7 +42,12 @@
 </head>
 
 <body>
-
+    <?php
+    //fetch Category name
+    include('class/Category_Class.php');
+    $category_obj = new Category_Class();
+    $res = $category_obj->getAllcategory();
+    ?>
     <!-- ======= Header ======= -->
     <header id="header" class="fixed-top d-flex align-items-center">
         <div class="container d-flex align-items-center justify-content-between">
@@ -53,9 +58,20 @@
             <nav id="navbar" class="navbar">
 
                 <ul>
-                    <li><a class="nav-link scrollto" href="product.php">Products</a></li>
+                    <li class="dropdown"><a href="#"><span>Products</span> <i class="bi bi-chevron-down"></i></a>
+                        <ul>
+                            <li><a href="product.php?cat_id=0">All Products</a></li>
+                            <?php
+                            while ($category_arr = mysqli_fetch_array($res)) {
+                            ?>
+                                <li><a href="product.php?cat_id=<?php echo $category_arr['id']; ?>"><?php echo $category_arr['name']; ?></a></li>
+                            <?php
+                            }
+                            ?>
+                        </ul>
+                    </li>
                     <li><a class="nav-link scrollto" href="category.php">Category</a></li>
-                    
+                    <li><a class="nav-link scrollto" href="client.php">Client</a></li>
                     <li><a class="nav-link scrollto" href="#">Log Out</a></li>
                 </ul>
 

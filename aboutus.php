@@ -83,10 +83,6 @@
                 </li>
                 <li>
                   <i class="fa fa-angle-double-right fa-icon-custom"></i>
-                  <span style="font-size: 13pt;">An ISO 9001:2008 Certified Company</span>
-                </li>
-                <li>
-                  <i class="fa fa-angle-double-right fa-icon-custom"></i>
                   <span style="font-size: 13pt;">Professional Approach</span>
                 </li>
                 <li>
@@ -111,7 +107,7 @@
                 <li>
                   <i class="fa fa-angle-double-right fa-icon-custom"></i>
                   <span style="font-size: 13pt;">Proven Hands-on experience with more than
-                    4000 successful projects.</span>
+                    1000 successful projects.</span>
                 </li>
                 <li>
                   <i class="fa fa-angle-double-right fa-icon-custom"></i>
@@ -164,8 +160,8 @@
               <!-- <hr
                 style="color: #007494; font-weight:bold;width: 44px; height: 6px;border-radius: 10px;margin-top: -5px;" /> -->
               <p style="margin-left: 25px;">
-                <b style="color:#026e99;"> Touch & Feel Electro Systems</b>,incorporated in 2004, today narrate a
-                logarithmic growth story after an enviable customer base of more than 4000+ (and growing) projects /
+                <b style="color:#026e99;"> Touch & Feel Electro Systems</b>,incorporated in 2018, today narrate a
+                logarithmic growth story after an enviable customer base of more than 1000+ (and growing) projects /
                 installations. We have successfully implemented Medium and Large sized Projects across India in such a
                 short-span in various sectors like:
               </p>

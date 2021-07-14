@@ -5,9 +5,9 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Touch And Feel Electro System | Complete Security Solon</title>
+  <title>Touch And Feel Electro System | Complete Security Solutions</title>
   <meta content="" name="description">
-  <meta content="" name="keywords">
+  <meta content="Touch And Feel Electro System,Touch And Feel,Touch And Feel Electro" name="keywords">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -63,7 +63,8 @@
   <!-- ================================== Hero Section ==================================== -->
   <section id="hero" class="d-flex align-items-center">
 
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <?php include 'slider.html' ?>
+    <!-- <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -71,19 +72,19 @@
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="https://wallpaperaccess.com/full/2461288.jpg" class="slider-img" alt="...">
+          <img src="img/core-img/feather.jpg" class="slider-img" alt="...">
           <div class="carousel-caption d-none d-md-block">
             <h5 style="padding-bottom: 160px;">First slide label</h5>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="https://images8.alphacoders.com/431/thumb-1920-431230.jpg" class="slider-img">
+          <img src="img/core-img/feather.jpg" class="slider-img">
           <div class="carousel-caption d-none d-md-block">
             <h5 style="padding-bottom: 120px;">Second slide label</h5>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="https://s1.1zoom.me/big7/116/Orc_Warriors_Men_499374.jpg" class="slider-img">
+          <img src="img/core-img/feather.jpg" class="slider-img">
           <div class="carousel-caption d-none d-md-block">
             <h5 style="padding-bottom: 120px;">Third slide label</h5>
           </div>
@@ -97,7 +98,7 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
-    </div>
+    </div> -->
 
   </section>
   <!------------------------------------------ End Hero -------------------------------------------->
@@ -111,27 +112,27 @@
         <div class="row">
 
           <div class="col-lg-2 col-md-4 col-6">
-            <img src="assets/img/clients/aditya-birla.jpg" class="img-fluid" alt="" data-aos="zoom-in">
+            <img src="assets/img/clients/aditya-birla.jpg" class="img-fluid" alt="">
           </div>
 
           <div class="col-lg-2 col-md-4 col-6">
-            <img src="assets/img/clients/tata power.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="100">
+            <img src="assets/img/clients/tata power.png" class="img-fluid" alt="">
           </div>
 
           <div class="col-lg-2 col-md-4 col-6">
-            <img src="assets/img/clients/RIL_Logo.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="200">
+            <img src="assets/img/clients/RIL_Logo.png" class="img-fluid" alt="">
           </div>
 
           <div class="col-lg-2 col-md-4 col-6">
-            <img src="assets/img/clients/Ultratechcement.webp" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="300">
+            <img src="assets/img/clients/Ultratechcement.webp" class="img-fluid" alt="">
           </div>
 
           <div class="col-lg-2 col-md-4 col-6">
-            <img src="assets/img/clients/mc-chandigardh-logo.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="400">
+            <img src="assets/img/clients/mc-chandigardh-logo.png" class="img-fluid" alt="">
           </div>
 
           <div class="col-lg-2 col-md-4 col-6">
-            <img src="assets/img/clients/charbhuja group.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="500">
+            <img src="assets/img/clients/charbhuja group.png" class="img-fluid" alt="">
           </div>
 
         </div>
@@ -156,7 +157,7 @@
         </div>
 
         <div class="row content">
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="150">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="10">
             <p>
               We are pleased to introduce <b style="color:#026e99;"> Touch & Feel Electro Systems </b> , MSME Certified
               Company, which specializes in advanced Electronics Security,
@@ -174,7 +175,7 @@
               <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li> -->
             </ul>
           </div>
-          <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-up" data-aos-delay="300">
+          <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-up" data-aos-delay="30">
             <p>
               <b style="color:#026e99;"> Touch & Feel Electro Systems</b>, incorporated in 2018, with vast field
               experience, technical expertise,
@@ -202,11 +203,11 @@
       <div class="container">
 
         <div class="row">
-          <div class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-xl-start" data-aos="fade-right" data-aos-delay="150">
+          <div class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-xl-start" data-aos="fade-right" data-aos-delay="30">
             <img src="assets/img/counts-img.svg" alt="" class="img-fluid">
           </div>
 
-          <div class="col-xl-7 d-flex align-items-stretch pt-4 pt-xl-0" data-aos="fade-left" data-aos-delay="300">
+          <div class="col-xl-7 d-flex align-items-stretch pt-4 pt-xl-0" data-aos="fade-left" data-aos-delay="30">
             <div class="content d-flex flex-column justify-content-center">
               <div class="row">
                 <div class="col-md-6 d-md-flex align-items-md-stretch">
@@ -220,7 +221,7 @@
                 <div class="col-md-6 d-md-flex align-items-md-stretch">
                   <div class="count-box">
                     <i class="bi bi-journal-richtext"></i>
-                    <span data-purecounter-start="0" data-purecounter-end="85" data-purecounter-duration="1" class="purecounter"></span>
+                    <span data-purecounter-start="100" data-purecounter-end="1000" data-purecounter-duration="100" class="purecounter"></span>
                     <p><strong>Projects</strong> adipisci atque cum quia aspernatur totam laudantium et quia dere tan
                     </p>
                   </div>
@@ -334,7 +335,7 @@
 
         <div class="row">
           <div class="col-md-6 col-lg-4 d-flex text-center mb-4">
-            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="20">
               <div class="icon">
                 <!-- <i class="fas fa-check-square"></i> -->
 
@@ -347,7 +348,7 @@
           </div>
 
           <div class="col-md-6 col-lg-4 d-flex text-center mb-4">
-            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="10">
               <div class="icon">
                 <i class="fa fa-chart-line"></i>
               </div>
@@ -358,7 +359,7 @@
           </div>
 
           <div class="col-md-6 col-lg-4 d-flex text-center mb-4">
-            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="20">
               <div class="icon"><i class="fa fa-server"></i></div>
               <h4 class="title"><a href="">SERVICE</a></h4>
               <p class="description">Strongly believe and follow in “Service first, then Sales”.</p>
@@ -368,7 +369,7 @@
 
         <div class="row">
           <div class="col-md-6 col-lg-4 d-flex text-center mb-4">
-            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="20">
               <div class="icon"><i class="fa fa-building"></i></div>
               <h4 class="title"><a href="">INTEGRITY</a></h4>
               <p class="description">We walk the talk, delivering what we promise. We stand by our commitments providing
@@ -377,7 +378,7 @@
           </div>
 
           <div class="col-md-6 col-lg-4 d-flex text-center mb-4">
-            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="20">
               <div class="icon"><i class="fa fa-users"></i></div>
               <h4 class="title"><a href="">TEAMWORK</a></h4>
               <p class="description">We believe in working together, staying together. We encourage open and effective
@@ -388,7 +389,7 @@
           </div>
 
           <div class="col-md-6 col-lg-4 d-flex text-center mb-4">
-            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="20">
               <div class="icon"><i class="bx bx-file-find"></i></div>
               <h4 class="title"><a href="">TRANSPARENCY</a></h4>
               <p class="description">We work with lucid thoughts and actions, ensuring equality among our employees,
@@ -553,15 +554,20 @@
 
 
     <!-- ======================================== Portfolio Section ==================================== -->
+    <?php
+    require_once "admin/class/Product_Class.php";
+    $product_obj = new Product_Class();
+    $prod_res = $product_obj->get_product_9();
+    ?>
     <section id="portfolio" class="portfolio">
       <div class="container">
 
         <div class="section-title" data-aos="fade-up">
           <h2>Portfolio</h2>
-          <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem</p>
+          <p>Our Some Product Portfolio</p>
         </div>
 
-        <div class="row" data-aos="fade-up" data-aos-delay="200">
+        <!-- <div class="row" data-aos="fade-up" data-aos-delay="200">
           <div class="col-lg-12 d-flex justify-content-center">
             <ul id="portfolio-flters">
               <li data-filter="*" class="filter-active">All</li>
@@ -570,25 +576,32 @@
               <li data-filter=".filter-web">Web</li>
             </ul>
           </div>
-        </div>
+        </div> -->
 
         <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="400">
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 1</h4>
-                <p>App</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+          <?php
+          while ($product_arr = mysqli_fetch_array($prod_res)) {
+          ?>
+            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+              <div class="portfolio-wrap">
+                <!-- <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt=""> -->
+                <img src="<?php echo substr($product_arr['image'],3);?>" style="width:420px !important;height:320px !important;" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4><?php echo $product_arr['name']; ?></h4>
+                  <!-- <p>App</p> -->
+                  <div class="portfolio-links">
+                    <a href="<?php echo substr($product_arr['image'],3);?>" data-gallery="portfolioGallery" target="_blank" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+                    <a href="products.php?cat_id=<?php echo $product_arr['category_id']; ?>"  title="More Details"><i class="bx bx-link"></i></a>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
+          <?php
+          }
+          ?>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+
+          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
@@ -600,105 +613,7 @@
                 </div>
               </div>
             </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 2</h4>
-                <p>App</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Card 2</h4>
-                <p>Card</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Web 2</h4>
-                <p>Web</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 3</h4>
-                <p>App</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Card 1</h4>
-                <p>Card</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Card 3</h4>
-                <p>Card</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Web 3</h4>
-                <p>Web</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
+          </div> -->
 
         </div>
 
@@ -801,7 +716,7 @@
 
 
     <!-- ===================================== F.A.Q Section ================================= -->
-    <section id="faq" class="faq">
+    <!-- <section id="faq" class="faq">
       <div class="container">
 
         <div class="section-title" data-aos="fade-up">
@@ -819,7 +734,7 @@
               Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
             </p>
           </div>
-        </div><!-- End F.A.Q Item-->
+        </div>
 
         <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
           <div class="col-lg-5">
@@ -833,7 +748,7 @@
               ullamcorper dignissim.
             </p>
           </div>
-        </div><!-- End F.A.Q Item-->
+        </div>
 
         <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
           <div class="col-lg-5">
@@ -847,38 +762,12 @@
               Lectus urna duis convallis convallis tellus.
             </p>
           </div>
-        </div><!-- End F.A.Q Item-->
+        </div>
 
-        <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
-          <div class="col-lg-5">
-            <i class="ri-question-line"></i>
-            <h4>Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?</h4>
-          </div>
-          <div class="col-lg-7">
-            <p>
-              Aperiam itaque sit optio et deleniti eos nihil quidem cumque. Voluptas dolorum accusantium sunt sit enim.
-              Provident consequuntur quam aut reiciendis qui rerum dolorem sit odio. Repellat assumenda soluta sunt
-              pariatur error doloribus fuga.
-            </p>
-          </div>
-        </div><!-- End F.A.Q Item-->
-
-        <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="500">
-          <div class="col-lg-5">
-            <i class="ri-question-line"></i>
-            <h4>Tempus quam pellentesque nec nam aliquam sem et tortor consequat?</h4>
-          </div>
-          <div class="col-lg-7">
-            <p>
-              Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel
-              risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida
-              quis blandit turpis cursus in
-            </p>
-          </div>
-        </div><!-- End F.A.Q Item-->
+        
 
       </div>
-    </section>
+    </section> -->
     <!------------------------------------- End F.A.Q Section -------------------------------------->
 
 
@@ -964,13 +853,13 @@
   <?php include 'footer.php' ?>
   <!-- End Footer -->
   <!-- Vendor JS Files -->
-  <!-- <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/purecounter/purecounter.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script> -->
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
   <!-- Template Main JS File -->
   <!-- <script src="assets/js/main.js"></script> -->
