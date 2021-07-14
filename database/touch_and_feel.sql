@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 08, 2021 at 08:33 PM
+-- Generation Time: Jul 13, 2021 at 07:37 AM
 -- Server version: 10.4.18-MariaDB
 -- PHP Version: 7.3.27
 
@@ -59,6 +59,15 @@ CREATE TABLE `client` (
   `is_deleted` tinyint(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Dumping data for table `client`
+--
+
+INSERT INTO `client` (`id`, `name`, `detail`, `image`, `is_deleted`) VALUES
+(1, 'Aditya Birla', 'sdjsdafhsdfsfsdfsdfsfsdfsdfsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsd', '../img/client/1625840811_pexels-hristo-fidanov-1252890.jpg', 0),
+(2, 'gh', 'sadas', '../img/client/1625917497_astronomy-3069225.jpg', 0),
+(3, 'Aditya Birlafghgf', 'thfghgf', '../img/client/1625918717_IMG_20201214_092543_966.jpg', 0);
+
 -- --------------------------------------------------------
 
 --
@@ -93,10 +102,10 @@ CREATE TABLE `product` (
 --
 
 INSERT INTO `product` (`id`, `name`, `detail`, `category_id`, `image`, `is_deleted`) VALUES
-(5, 'Test', 'sfsdfsfsfsffsfsddf $ sddfxsffsd xsdfsdf', 1, 'img/product/1625480026_add company Ledger.PNG', 1),
-(6, 'Test as', 'sdfsdf $ sfsdf sdff', 1, 'img/product/1625334731_48214776-Jai-Shri-Krishna-Lord-krishna-wallpapers-Lord-krishna.jpg', 0),
-(7, 'Test vdfsfs', 'sdfsdfsdf', 2, 'img/product/1625334798_7da0135f30e1e5c00da21c8af82d61b5.jpg', 0),
-(8, 'Rushabh Thumar', 'High definition (HD) resolutions like 2 / 3 / 4/ 5 / 8 / 12 and higher Megapixels $\r\nAdvance high compression technology like H.265, H.265+, H.264, H.264+, etc.$\r\nIR Night vision capability$\r\nFixed and Motorized zoom lens$\r\nFixed and Motorized zoom lens$\r\nFixed and Motorized zoom lens$Fixed and Motorized zoom lens$\r\nFixed and Motorized zoom lens$\r\nFixed and Motorized zoom lens$', 1, 'img/product/1625479666_Shree-Krishna-Arjun-On-Rath-Picture-for-Facebook.jpeg', 0);
+(5, 'Test', 'sfsdfsfsfsffsfsddf $ sddfxsffsd xsdfsdf', 1, '../img/product/1625480026_add company Ledger.PNG', 0),
+(6, 'Test as', 'sdfsdf $ sfsdf sdff', 1, '../img/product/1625334731_48214776-Jai-Shri-Krishna-Lord-krishna-wallpapers-Lord-krishna.jpg', 0),
+(7, 'Test vdfsfs', 'sdfsdfsdf', 2, '../img/product/1625334798_7da0135f30e1e5c00da21c8af82d61b5.jpg', 0),
+(8, 'Rushabh Thumar', 'High definition (HD) resolutions like 2 / 3 / 4/ 5 / 8 / 12 and higher Megapixels $\r\nAdvance high compression technology like H.265, H.265+, H.264, H.264+, etc.$\r\nIR Night vision capability$\r\nFixed and Motorized zoom lens$\r\nFixed and Motorized zoom lens$\r\nFixed and Motorized zoom lens$Fixed and Motorized zoom lens$\r\nFixed and Motorized zoom lens$\r\nFixed and Motorized zoom lens$', 1, '../img/product/1625479666_Shree-Krishna-Arjun-On-Rath-Picture-for-Facebook.jpeg', 0);
 
 --
 -- Indexes for dumped tables
@@ -140,7 +149,7 @@ ALTER TABLE `category`
 -- AUTO_INCREMENT for table `client`
 --
 ALTER TABLE `client`
-  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `contact`
