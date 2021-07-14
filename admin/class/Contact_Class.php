@@ -10,7 +10,7 @@ class Contact_Class
             $this->con = $con_obj->getConnection();
         }
 
-  function add_client($name, $email,$subject,$message)
+  function add_contact($name,$email,$subject,$message)
   {
       $query = "INSERT INTO contact (name,email,subject,message) values('$name','$email','$subject','$message')";
       $res =  mysqli_query($this->con, $query) or die(mysqli_error($this->con));
