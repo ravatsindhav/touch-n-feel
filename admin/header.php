@@ -1,3 +1,8 @@
+
+<?php
+session_start();
+if (isset($_SESSION['otp']) && isset($_SESSION['email'])) {
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -72,7 +77,7 @@
                     </li>
                     <li><a class="nav-link scrollto" href="category.php">Category</a></li>
                     <li><a class="nav-link scrollto" href="client.php">Client</a></li>
-                    <li><a class="nav-link scrollto" href="#">Log Out</a></li>
+                    <li><a class="nav-link scrollto" href="log_out.php">Log Out</a></li>
                 </ul>
 
                 <i class="bi bi-list mobile-nav-toggle"></i>
@@ -99,3 +104,10 @@
 </body>
 
 </html>
+<?php
+}
+else{
+    header("Location:index.php");
+}
+?>
+

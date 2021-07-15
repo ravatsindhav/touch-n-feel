@@ -21,3 +21,4 @@ class Contact_Class
   //     return $s;
   // }
 }
+?>

@@ -1,5 +1,5 @@
 <?php
-class Send_Contact_Mail
+class Send_Otp_Mail_Class
 {
     //Email Subject and To Email Address
     var $to = "ravat.s@gurukul.org,rushabh.t@gurukul.org";
@@ -12,8 +12,9 @@ class Send_Contact_Mail
     var $CC = "\r\n" . 'Cc: myboss@example.com' . "\r\n";
 
 
-    function send_mail($name, $email, $subject, $message)
+    function send_otp($email, $otp)
     {
+        return 1;
     }
 }
 ?>

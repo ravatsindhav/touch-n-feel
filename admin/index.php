@@ -1,25 +1,46 @@
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<?php
+session_start();
+require_once "class/User_Class.php";
+?>
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Login | Complete Security Solution</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 
-<!-- Vendor CSS Files -->
-<link href="../assets/vendor/aos/aos.css" rel="stylesheet">
-<link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-<link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-<link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-<link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-<link href="../assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-<link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="../assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-<link href="assets/css/admin.css" rel="stylesheet">
+    <link href="assets/css/admin.css" rel="stylesheet">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+
+</head>
 
 <style type="text/css">
     body {
         background: linear-gradient(-35deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.75)), url('https://cdn.hipwallpaper.com/i/52/98/jOBTIU.jpg');
+        background-size: 100% 100%;
         height: 100%;
         background-repeat: no-repeat;
         background-size: cover;
@@ -167,8 +188,8 @@
     /* X-Small devices (portrait phones, less than 576px) */
     @media screen and (max-width: 576px) {
         .card-size {
-            width: 500px!important;
-            margin-top: 20%!important;
+            width: 500px !important;
+            margin-top: 20% !important;
         }
     }
 
@@ -176,7 +197,7 @@
     @media screen and (max-width: 768px) {
         .card-size {
             width: 600px !important;
-            margin-top: 20%!important;
+            margin-top: 20% !important;
         }
 
         .spacing {
@@ -190,7 +211,7 @@
     }
 
     /* Medium devices (tablets, less than 992px) */
-    @media screen and (min-width: 992px) and (max-width: 1050px)  {
+    @media screen and (min-width: 992px) and (max-width: 1050px) {
         .card-size {
             width: 800px !important;
             margin-top: 30% !important;
@@ -217,6 +238,7 @@
     }
 </style>
 
+
 <body>
 
 
@@ -229,13 +251,16 @@
 
             <form action="" method="post" role="form" class="form-spacing">
                 <div class="form-group spacing">
-                    <input type="text" name="name" class="form-control input-active mr-5" id="name" placeholder="Enter Your Username..." required>
+                    <input name="email" type="email" class="form-control input-active mr-5" id="name" placeholder="Enter Your Email..." required>
                 </div>
                 <div class="form-group spacing">
-                    <input type="password" class="form-control input-active mr-5" name="email" id="email" placeholder="Enter Your Password..." required>
+                    <input name="password" type="password" class="form-control input-active mr-5" id="email" placeholder="Enter Your Password..." required>
                 </div>
                 <div class="row justify-content-center">
-                    <button type="button" class="btn btn-default mx-auto w-50 btn-login">Log in</button>
+                    <button type="submit" name="btn_submit" class="btn btn-default mx-auto w-50 btn-login">Log in</button>
+                </div>
+                <div class="row justify-content-center">
+                    <a href="reset_password.php" class="text-center" style="text-decoration: none;">Forget Password ?</a>
                 </div>
             </form>
 
@@ -243,15 +268,56 @@
     </div>
 
 
+    <?php
+    if (isset($_POST['btn_submit'])) {
+        $email = $_POST['email'];
+        $password = $_POST['password'];
+        if (preg_match('/^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,50})$/', $email)) {
+            $user_obj = new User_Class();
+            $fetch_user = $user_obj->get_user($email);
+            if ($r = mysqli_fetch_array($fetch_user)) {
+                $fetched_pass = $r['password'];
+                if (md5($password, false) == $fetched_pass) {
+                    $_SESSION['user'] = $r['name'];
+    ?>
+                    <script>
+                        alert('You Are Login Successfully');
+                        location.href = 'product.php';
+                    </script>
+                <?php
+                } else {
+                ?>
+                    <script>
+                        alert("Please Enter Valid Email & Password");
+                    </script>
+                <?php
+                    echo "<meta http-equiv='refresh' content='0'>";
+                }
+            } else {
+                ?>
+                <script>
+                    alert("No User found on You Entered Email");
+                </script>
+            <?php
+                echo "<meta http-equiv='refresh' content='0'>";
+            }
+        } else {
+            ?>
+            <script>
+                alert("Please Enter Valid Email");
+            </script>
+    <?php
+            echo "<meta http-equiv='refresh' content='0'>";
+        }
+    }
+    ?>
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/purecounter/purecounter.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
 
 </body>
-
-
-<!-- Vendor JS Files -->
-<script src="assets/vendor/aos/aos.js"></script>
-<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-<script src="assets/vendor/purecounter/purecounter.js"></script>
-<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>

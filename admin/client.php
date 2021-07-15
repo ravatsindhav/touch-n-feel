@@ -19,10 +19,6 @@
     <link href="assets/css/admin.css" rel="stylesheet">
 </head>
 
-
-</style>
-
-
 <body>
 
     <!-- ================== Header ================ -->
