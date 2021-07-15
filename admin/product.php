@@ -150,7 +150,7 @@
           </div>
           <div class="col-md-6">
             <ul class="list-decoration list-decoration--gradient">
-            <img src="<?php echo $product_arr['image']; ?>" style="width:620px !important;height:320px !important;"  class="image-set-1">
+            <img src="<?php echo $product_arr['image']; ?>" style="width:600px !important;height:320px !important;"  class="image-set-1">
             </ul>
           </div>
         </div>
@@ -165,102 +165,6 @@
 
 
   </section>
-
-
-
-
-
-
-  <!-- ============= Edit Product Page ============ -->
-  <!-- <section class="container">
-
-    <div class="row">
-
-      <div class="col-md-8">
-        <div class="mb-3">
-          <input type="text" class="form-control rounded-0 bg-light total-input-border" id="exampleFormControlInput1" placeholder="Enter Product Name...">
-        </div>
-        <div class="mb-3">
-          <select class="form-select rounded-0 bg-light total-input-border" id="inputGroupSelect01">
-            <option selected>Choose Category...</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
-          </select>
-        </div>
-        <div class="mb-3">
-          <textarea class="form-control rounded-0 bg-light total-input-border" id="exampleFormControlTextarea1" rows="3" placeholder="Enter Product Name..."></textarea>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="row justify-content-center">
-          <img src="https://edsystemsindia.com/wp-content/uploads/2016/01/cctv1.png" class="edit-image-1">
-          <button type="button" class="btn btn-danger rounded-0 mx-auto w-50 btn-sm mt-3">Remove Photo</button>
-        </div>
-      </div>
-
-    </div>
-
-    <div class="row">
-      <div class="col-md-8">
-        <div class="row justify-content-center">
-          <button type="button" class="btn btn-success rounded-0 btn-sm save-btn-success">Save</button>
-        </div>
-      </div>
-    </div>
-
-
-
-  </section> -->
-
-  <!-- ============= Add Product Page ==============-->
-  <!-- <section class="container">
-
-    <div class="row">
-
-      <div class="col-md-8">
-        <div class="mb-3">
-          <input type="text" class="form-control rounded-0 bg-light total-input-border" id="exampleFormControlInput1" placeholder="Enter Product Name...">
-        </div>
-        <div class="mb-3">
-          <select class="form-select rounded-0 bg-light total-input-border" id="inputGroupSelect01">
-            <option selected>Choose Category...</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
-          </select>
-        </div>
-        <div class="mb-3">
-          <textarea class="form-control rounded-0 bg-light total-input-border" id="exampleFormControlTextarea1" rows="3" placeholder="Enter Product Name..."></textarea>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="row justify-content-center">
-          <div class='file file--upload'>
-            <label for='input-file'>
-              <i class="fas fa-paperclip fa-2x" style="transform: rotate(-43deg);"></i><strong>Upload Image...</strong>
-            </label>
-            <input id='input-file' type='file' />
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-    <div class="row">
-      <div class="col-md-8">
-        <div class="row justify-content-center">
-          <button type="button" class="btn btn-success rounded-0 btn-sm save-btn-success">Save</button>
-        </div>
-      </div>
-    </div>
-
-  </section> -->
-
-
-
 
 
   <!-- ================================================================== Model Box ======================================================================== -->
@@ -314,49 +218,6 @@
             </div>
 
           </section>
-
-          <!-- ========== Add Product Page ========== -->
-          <!-- <section class="container">
-
-            <div class="row" style="margin-top: -50px;">
-              <div class="col-md-12">
-                <div class="row justify-content-center">
-                  <div class='file file--upload'>
-                    <label for='input-file'>
-                      <i class="fas fa-paperclip fa-2x" style="transform: rotate(-43deg);"></i><strong>Upload Image...</strong>
-                    </label>
-                    <input id='input-file' type='file' />
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-12 mt-4">
-                <div class="mb-3">
-                  <input type="text" class="form-control rounded-0 bg-light total-input-border" id="exampleFormControlInput1" placeholder="Enter Product Name...">
-                </div>
-                <div class="mb-3">
-                  <select class="form-select rounded-0 bg-light total-input-border" id="inputGroupSelect01">
-                    <option selected>Choose Category...</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                  </select>
-                </div>
-                <div class="mb-3">
-                  <textarea class="form-control rounded-0 bg-light total-input-border" id="exampleFormControlTextarea1" rows="3" placeholder="Enter Product Name..."></textarea>
-                </div>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-md-12">
-                <div class="row justify-content-center">
-                  <button type="button" class="btn btn-success rounded-0 btn-sm save-btn-success w-50">Save</button>
-                </div>
-              </div>
-            </div>
-
-          </section> -->
-          <!-- ========== Add Product Page ========== -->
         </div>
       </div>
     </div>

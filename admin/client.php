@@ -40,7 +40,7 @@
 
         <div class="row mt-5">
             <div class="col-md-12">
-                <h4 class="alert alert-default text-light text-center p-2 rounded-0" style="background: #3498db;">All Valued Customers</h4>
+                <h4 class="alert alert-default text-light text-center p-2 rounded-0" style="background: #3498db;">All Valued Clients</h4>
             </div>
         </div>
         <!------------------------ ALl Category & Add  Category button --------------------->
@@ -73,7 +73,7 @@
                                 </div>
                                 <div class="col-md-2">
                                     <button type="submit" name="btn_edit_dialog" class="btn btn-default text-success btn-right-1">
-                                        <a class="fas fa-edit icon-size text-success" href="edit_client.php?id=0"></a>
+                                        <a class="fas fa-edit icon-size text-success" href="edit_client.php?id=<?php echo $client_arr['id'];?>"></a>
                                     </button>
                                 </div>
                             </div>
