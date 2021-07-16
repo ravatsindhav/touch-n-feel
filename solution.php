@@ -10,7 +10,7 @@
     <meta content="" name="keywords">
 
     <!-- Favicons -->
-    <link href="assets/img/favicon.png" rel="icon">
+    <link href="img/core-img/logo.png" rel="icon">
     <style>
         .fa-icon-custom {
             margin-top: 4px;

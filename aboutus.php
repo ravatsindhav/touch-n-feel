@@ -4,8 +4,8 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <link href="assets/img/favicon.png" rel="icon">
-  <title> About | Touch  and Feel Electro System</title>
+  <title> About | Touch & Feel Electro System</title>
+  <link href="img/core-img/logo.png" rel="icon">
 
   <style>
  .fa-icon-custom{

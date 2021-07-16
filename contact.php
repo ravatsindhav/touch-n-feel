@@ -10,7 +10,7 @@
     <meta content="" name="keywords">
 
     <!-- Favicons -->
-    <link href="assets/img/favicon.png" rel="icon">
+    <link href="img/core-img/logo.png" rel="icon">
     <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
     <!-- Google Fonts -->
@@ -94,25 +94,25 @@
                         </div>
 
                         <div class="col-lg-5 col-md-12" data-aos="fade-up" data-aos-delay="300">
-                            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                            <form action="" method="post" role="form" class="php-email-form">
                                 <div class="form-group">
-                                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                                    <input name="name" type="text" class="form-control" id="name" placeholder="Your Name" required>
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                                    <input name="email" type="email" class="form-control" id="email" placeholder="Your Email" required>
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                                    <input name="subject" type="text" class="form-control" id="subject" placeholder="Subject" required>
                                 </div>
                                 <div class="form-group">
-                                    <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                                    <textarea name="message" class="form-control" rows="5" placeholder="Message" required></textarea>
                                 </div>
                                 <div class="my-3">
                                     <div class="loading">Loading</div>
                                     <div class="error-message"></div>
                                     <div class="sent-message">Your message has been sent. Thank you!</div>
                                 </div>
-                                <div class="text-center"><button type="submit">Send Message</button></div>
+                                <div class="text-center"><button type="submit" name="btn_submit">Send Message</button></div>
                             </form>
                         </div>
 
@@ -124,6 +124,57 @@
         </div>
     </main>
     <!-- End #main -->
+
+    <!-- Contact Binding -->
+    <?php
+    if (isset($_POST['btn_submit'])) {
+        $name = $_POST['name'];
+        $email = $_POST['email'];
+        $subject = $_POST['subject'];
+        $message = $_POST['message'];
+
+        require_once "admin/class/Contact_Class.php";
+        $contact_obj = new Contact_Class();
+        require_once "admin/class/Send_Contact_Mail.php";
+        $mail_obj = new Send_Contact_Mail();
+
+        if (preg_match('/^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,50})$/', $email)) {
+            if ($name != "" && $email != "" && $subject != "" && $message != "") {
+                $res_add = $contact_obj->add_contact($name, $email, $subject, $message);
+                if ($res_add) {
+                    $mail_result = $mail_obj->send_mail($name, $email, $subject, $message);
+                    if ($mail_result == 1) {
+    ?>
+                        <script>
+                            alert('Your Details Successfully Sended');
+                        </script>
+                    <?php
+                        echo "<meta http-equiv='refresh' content='0'>";
+                    } else {
+                    ?>
+                        <script>
+                            alert('Failed to Send Your Details');
+                        </script>
+                    <?php
+                    }
+                } else {
+                    ?>
+                    <script>
+                        alert('Failed to Send Your Details');
+                    </script>
+            <?php
+                }
+            }
+        } else {
+            ?>
+            <script>
+                alert('Please Enter Valid Email');
+            </script>
+    <?php
+        }
+    }
+    ?>
+    <!-- End Contact Binding -->
 
     <!-- ======= Footer ======= -->
     <?php include 'footer.php' ?>

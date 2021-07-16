@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Edit | Complete Security Solon</title>
+    <title>Edit Category| Complete Security Solon</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -46,7 +46,9 @@
     if (is_numeric($cat_id)) {
         $cat_res = $cat_obj->get_category($cat_id);
     }
-    $fetched_category = mysqli_fetch_array($cat_res)
+    if($cat_res != null) {
+        $fetched_category = mysqli_fetch_array($cat_res);
+    }
     ?>
 
     <!-- ================================================================ Get Product Page ================================================================== -->
@@ -84,6 +86,18 @@
                 </div>
             </form>
         <?php
+        }
+        else{
+            ?>
+             <div class="row mt-5" style="margin-top: 90px;" data-aos="fade-up">
+            <div class="col-md-12">
+                <div class="d-grid gap-2">
+                    <button class="alert alert-danger rounded-0" type="button">Invalid  Category</button>
+                </div>
+            </div>
+
+        </div>
+            <?php
         }
         ?>
     </section>

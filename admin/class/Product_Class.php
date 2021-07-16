@@ -62,3 +62,4 @@ class Product_Class
         return $s;
     }
 }
+?>

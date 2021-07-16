@@ -10,7 +10,7 @@
     <meta content="" name="keywords">
 
     <!-- Favicons -->
-    <link href="assets/img/favicon.png" rel="icon">
+    <link href="../img/core-img/logo.png" rel="icon">
     <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
     <!-- Google Fonts -->
@@ -68,7 +68,7 @@
                         <div class='file file--upload'>
                             <label for='input-file'>
                                 <i class="fas fa-paperclip fa-2x" style="transform: rotate(-43deg);"></i>
-                                <strong id="uploaded-File">Upload Image...</strong>
+                                <strong id="uploaded-File">Upload Product Image...</strong>
                             </label>
                             <input id='input-file' accept="image/*" name="product_img" type='file' />
                             <!-- <div id="file-upload-filename"></div> -->

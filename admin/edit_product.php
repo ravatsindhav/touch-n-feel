@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Edit | Complete Security Solon</title>
+    <title>Edit Category | Complete Security Solon</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -44,7 +44,11 @@
     if (is_numeric($product_id)) {
         $prod_res = $prod_obj->get_product($product_id);
     }
-    $fetched_product = mysqli_fetch_array($prod_res)
+    $fetched_product = null;
+    if ($prod_res != null) {
+
+        $fetched_product = mysqli_fetch_array($prod_res);
+    }
     ?>
 
     <!-- ================================================================ Get Product Page ================================================================== -->
@@ -58,7 +62,7 @@
 
         </div>
         <?php
-        if ($prod_res != null) {
+        if ($fetched_product != null) {
         ?>
             <form action="" name="addproduct" class="addimg-form" method="post" enctype="multipart/form-data">
                 <div class="row mt-3">
@@ -94,14 +98,14 @@
                         <div class='file file--upload'>
                             <label for='input-file'>
                                 <i class="fas fa-paperclip fa-2x" style="transform: rotate(-43deg);"></i>
-                                <strong id="uploaded-File">Upload Image...</strong>
+                                <strong id="uploaded-File">Upload Product Image...</strong>
                             </label>
                             <input id='input-file' accept="image/*" onchange="loadFile(event)" name="product_img" type='file' /><br>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <img id="showimage" src="<?php echo $fetched_product['image']; ?>" style="width:620px !important;height:250px !important;" class="edit-image-1">
-                        <img id="output" style="width:620px !important;height:250px !important;"  class="edit-image-1" />
+                        <img id="output" style="width:620px !important;height:250px !important;" class="edit-image-1" />
                     </div>
                 </div>
                 <div class="row">
@@ -113,6 +117,17 @@
                     </div>
                 </div>
             </form>
+        <?php
+        } else {
+        ?>
+            <div class="row mt-5" style="margin-top: 90px;" data-aos="fade-up">
+                <div class="col-md-12">
+                    <div class="d-grid gap-2">
+                        <button class="alert alert-danger rounded-0" type="button">Invalid Product Id</button>
+                    </div>
+                </div>
+
+            </div>
         <?php
         }
         ?>
@@ -132,7 +147,7 @@
                         <div class="row mt-3 mb-4">
                             <div class="col-6">
                                 <form action="" name="delproduct" method="post">
-                                    <button type="submit" name="btn_delete"  class="btn btn-danger w-75 float-end" type="button">Delete</button>
+                                    <button type="submit" name="btn_delete" class="btn btn-danger w-75 float-end" type="button">Delete</button>
                                 </form>
                             </div>
                             <div class="col-6">
@@ -193,7 +208,7 @@
                 // $b = $_FILES["product_img"]["tmp_name"];
                 // $prod_img = "img/product/" . time() . "_" . $_FILES["product_img"]["name"];
                 // $file_res = move_uploaded_file($b, $prod_img);
-                $res = $prod_obj->update_product($prod_id, $prod_name, $prod_detail, $prod_category,);
+                $res = $prod_obj->update_product($prod_id, $prod_name, $prod_detail, $prod_category);
                 if ($res) {
                     $prod_name = "";
                     $prod_detail = "";
@@ -220,25 +235,34 @@
                     $b = $_FILES["product_img"]["tmp_name"];
                     $prod_img = "../img/product/" . time() . "_" . $_FILES["product_img"]["name"];
                     $file_res = move_uploaded_file($b, $prod_img);
-                    $res = $prod_obj->update_product_image($prod_id, $prod_name, $prod_detail, $prod_category, $prod_img);
-                    if ($res) {
-                        $prod_name = "";
-                        $prod_detail = "";
-                        $prod_category = "";
-                        $prod_id = "";
+                    if ($file_res == 1) {
+                        $res = $prod_obj->update_product_image($prod_id, $prod_name, $prod_detail, $prod_category, $prod_img);
+                        if ($res) {
+                            $prod_name = "";
+                            $prod_detail = "";
+                            $prod_category = "";
+                            $prod_id = "";
                     ?>
-                        <script>
-                            alert('Product Updated Successfully');
-                            location.href = 'product.php';
-                        </script>
-                    <?php
-                        // header("Location:./product.php");
+                            <script>
+                                alert('Product Updated Successfully');
+                                location.href = 'product.php';
+                            </script>
+                        <?php
+                            // header("Location:./product.php");
+                        } else {
+                        ?>
+                            <script>
+                                alert('Failded to Update Product');
+                            </script>
+                        <?php
+                        }
                     } else {
-                    ?>
+                        ?>
                         <script>
-                            alert('Failded to Update Product');
+                            alert('Failded to Upload Product Image');
                         </script>
     <?php
+
                     }
                 }
             }
@@ -251,24 +275,22 @@
     <?php
     if (isset($_POST['btn_delete'])) {
         $prod_id = $fetched_product['id'];
-        $del_res=$prod_obj->delete_product($prod_id);
-        if($del_res){
-            ?>
+        $del_res = $prod_obj->delete_product($prod_id);
+        if ($del_res) {
+    ?>
             <script>
                 alert('Product Deleted Successfully !');
                 location.href = 'product.php';
             </script>
         <?php
-        }
-        else{
-            ?>
+        } else {
+        ?>
             <script>
                 alert('Failed Delete Product !');
                 //location.href = 'product.php';
             </script>
-        <?php
+    <?php
         }
-        
     }
     ?>
 

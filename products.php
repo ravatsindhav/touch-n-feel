@@ -5,12 +5,12 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title> All Products | Touch & Feel Electro System</title>
+    <title>Products | Touch & Feel Electro System</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
     <!-- Favicons -->
-    <link href="assets/img/favicon.png" rel="icon">
+  <link href="img/core-img/logo.png" rel="icon">
     <style>
         body {
             background-color: #f5f5f5 !important;
