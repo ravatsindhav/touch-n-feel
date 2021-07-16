@@ -214,7 +214,8 @@
                   <div class="count-box">
                     <i class="bi bi-emoji-smile"></i>
                     <span data-purecounter-start="0" data-purecounter-end="65" data-purecounter-duration="1" class="purecounter"></span>
-                    <p><strong>Happy Clients</strong> consequuntur voluptas nostrum aliquid ipsam architecto ut.</p>
+
+                    <p><strong>Happy Clients</strong> </p>
                   </div>
                 </div>
 
@@ -222,7 +223,7 @@
                   <div class="count-box">
                     <i class="bi bi-journal-richtext"></i>
                     <span data-purecounter-start="100" data-purecounter-end="1000" data-purecounter-duration="100" class="purecounter"></span>
-                    <p><strong>Projects</strong> adipisci atque cum quia aspernatur totam laudantium et quia dere tan
+                    <p><strong>Projects</strong> Successfully Completed
                     </p>
                   </div>
                 </div>
@@ -241,8 +242,7 @@
                       var n = d.getFullYear() + 1;
                       document.getElementById("experience").innerHTML = n - established;
                     </script>
-                    <p><strong>Years of experience</strong> aut commodi quaerat modi aliquam nam ducimus aut voluptate
-                      non vel</p>
+                    <p><strong>Years of experience</strong> </p>
                   </div>
                 </div>
 
@@ -250,7 +250,7 @@
                   <div class="count-box">
                     <i class="bi bi-award"></i>
                     <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
-                    <p><strong>Awards</strong> rerum asperiores dolor alias quo reprehenderit eum et nemo pad der</p>
+                    <p><strong>Awards</strong> Wining</p>
                   </div>
                 </div>
               </div>
@@ -785,23 +785,43 @@
 
     require_once "admin/class/Contact_Class.php";
     $contact_obj = new Contact_Class();
+    require_once "admin/class/Send_Contact_Mail.php";
+    $mail_obj = new Send_Contact_Mail();
 
-    if ($name != "" && $email != "" && $subject != "" && $message != "") {
-      $res_add = $contact_obj->add_contact($name, $email, $subject, $message);
-      if ($res_add) {
-  ?>
-        <script>
-          alert('Your Details Successfully Sended');
-        </script>
-      <?php
-        echo "<meta http-equiv='refresh' content='0'>";
-      } else {
-      ?>
-        <script>
-          alert('Failed to Send Your Details');
-        </script>
-  <?php
+    if (preg_match('/^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,50})$/', $email)){
+      if ($name != "" && $email != "" && $subject != "" && $message != "") {
+        $res_add = $contact_obj->add_contact($name, $email, $subject, $message);
+        if ($res_add) {
+          $mail_result = $mail_obj->send_mail($name, $email, $subject, $message);
+          if ($mail_result == 1) {
+    ?>
+            <script>
+              alert('Your Details Successfully Sended');
+            </script>
+          <?php
+            echo "<meta http-equiv='refresh' content='0'>";
+          } else {
+          ?>
+            <script>
+              alert('Failed to Send Your Details');
+            </script>
+          <?php
+          }
+        } else {
+          ?>
+          <script>
+            alert('Failed to Send Your Details');
+          </script>
+    <?php
+        }
       }
+    }
+    else{
+      ?>
+      <script>
+        alert('Please Enter Valid Email');
+      </script>
+<?php
     }
   }
   ?>

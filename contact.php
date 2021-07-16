@@ -135,23 +135,42 @@
 
         require_once "admin/class/Contact_Class.php";
         $contact_obj = new Contact_Class();
+        require_once "admin/class/Send_Contact_Mail.php";
+        $mail_obj = new Send_Contact_Mail();
 
-        if ($name != "" && $email != "" && $subject != "" && $message != "") {
-            $res_add = $contact_obj->add_contact($name, $email, $subject, $message);
-            if ($res_add) {
+        if (preg_match('/^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,50})$/', $email)) {
+            if ($name != "" && $email != "" && $subject != "" && $message != "") {
+                $res_add = $contact_obj->add_contact($name, $email, $subject, $message);
+                if ($res_add) {
+                    $mail_result = $mail_obj->send_mail($name, $email, $subject, $message);
+                    if ($mail_result == 1) {
     ?>
-                <script>
-                    alert('Your Details Successfully Sended');
-                </script>
+                        <script>
+                            alert('Your Details Successfully Sended');
+                        </script>
+                    <?php
+                        echo "<meta http-equiv='refresh' content='0'>";
+                    } else {
+                    ?>
+                        <script>
+                            alert('Failed to Send Your Details');
+                        </script>
+                    <?php
+                    }
+                } else {
+                    ?>
+                    <script>
+                        alert('Failed to Send Your Details');
+                    </script>
             <?php
-                echo "<meta http-equiv='refresh' content='0'>";
-            } else {
-            ?>
-                <script>
-                    alert('Failed to Send Your Details');
-                </script>
-    <?php
+                }
             }
+        } else {
+            ?>
+            <script>
+                alert('Please Enter Valid Email');
+            </script>
+    <?php
         }
     }
     ?>
