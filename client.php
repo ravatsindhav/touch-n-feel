@@ -10,7 +10,7 @@
     <meta content="" name="keywords">
 
     <!-- Favicons -->
-    <link href="assets/img/favicon.png" rel="icon">
+    <link href="img/core-img/logo.png" rel="icon">
     <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
     <!-- Google Fonts -->
@@ -70,7 +70,7 @@
                     <div class="col-md-3">
                         <div class="card rounded-0 border-0 shadow-sm mb-4">
                             <div class="row justify-content-center">
-                                <img src="<?php echo substr($client_arr['image'],3);?>" style="width: 280px !important; height: 240px !important;">
+                                <img src="<?php echo substr($client_arr['image'], 3); ?>" style="width: 280px !important; height: 240px !important;">
                             </div>
                         </div>
                     </div>

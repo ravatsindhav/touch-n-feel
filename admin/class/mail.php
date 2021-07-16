@@ -32,7 +32,7 @@ $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
 $headers .= 'From: <info@touchandfeelelectro.com>' . "\r\n";
 $headers .= 'Cc: myboss@example.com' . "\r\n";
 
-// $retval = mail($to,$subject,$message,$headers);
+ $retval = mail($to,$subject,$message,$headers);
 // if( $retval == true ) {
 //     echo "Message sent successfully...";
 //  }else {

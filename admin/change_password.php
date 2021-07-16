@@ -271,7 +271,7 @@ if (isset($_SESSION['otp']) && isset($_SESSION['email'])) {
 
         <?php
         if (isset($_POST['btn_submit'])) {
-            $password = $_POST['confirm_password'];
+            $password = $_POST['password'];
             $confirm_password = $_POST['confirm_password'];
 
             require_once "class/User_Class.php";
@@ -295,10 +295,15 @@ if (isset($_SESSION['otp']) && isset($_SESSION['email'])) {
                                     alert('Password Updated Successfully');
                                     location.href = 'index.php';
                                 </script>
-        <?php
+                            <?php
                             }
                         } else {
-                            echo "Failed Change Password";
+                            ?>
+                            <script>
+                                alert('Failed Change Password');
+                            </script>
+                        <?php
+                            session_destroy();
                         }
                         // $otp=0;
                         // $otp=rand(11111,99999);
@@ -317,13 +322,25 @@ if (isset($_SESSION['otp']) && isset($_SESSION['email'])) {
                         //     }
                         // }
                     } else {
-                        echo "Please enter valid Email & OTP !";
+                        ?>
+                        <script>
+                            alert('Please enter valid Email & OTP !');
+                        </script>
+                    <?php
                     }
                 } else {
-                    echo "No User Found !";
+                    ?>
+                    <script>
+                        alert('No User Found !');
+                    </script>
+                <?php
                 }
             } else {
-                echo "Please Check Both Password..";
+                ?>
+                <script>
+                    alert('Please Check Both Password..');
+                </script>
+        <?php
             }
         }
         ?>

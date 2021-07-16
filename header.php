@@ -10,7 +10,7 @@
     <meta content="" name="keywords">
 
     <!-- Favicons -->
-    <link href="assets/img/favicon.png" rel="icon">
+    <link href="img/core-img/logo.png" rel="icon">
     <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
     <!-- Google Fonts -->
@@ -70,7 +70,7 @@
 
                         <li class="dropdown"><a href="#"><span>Products</span> <i class="bi bi-chevron-down"></i></a>
                             <ul>
-                            <li><a href="products.php?cat_id=0">All Products</a></li>
+                                <li><a href="products.php?cat_id=0">All Products</a></li>
                                 <?php
                                 while ($category_arr = mysqli_fetch_array($res)) {
                                 ?>

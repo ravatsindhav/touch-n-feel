@@ -1,7 +1,7 @@
 
 <?php
 session_start();
-if (isset($_SESSION['otp']) && isset($_SESSION['email'])) {
+if (isset($_SESSION['user'])) {
 ?>
 <!DOCTYPE html>
 <html lang="en">

@@ -10,7 +10,7 @@
   <meta content="Touch And Feel Electro System,Touch And Feel,Touch And Feel Electro" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
+  <link href="img/core-img/logo.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->

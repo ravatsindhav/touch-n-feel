@@ -271,7 +271,7 @@
         $user_obj = new User_Class();
         $send_otp_mail_obj = new Send_Otp_Mail_Class();
 
-        if (preg_match('/^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,50})$/', $email)){
+        if (preg_match('/^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,50})$/', $email)) {
             if ($email != null) {
                 $s = $user_obj->get_user($email);
                 if ($r = mysqli_fetch_array($s)) {
@@ -279,41 +279,59 @@
                         $otp = 0;
                         $otp = rand(111111, 999999);
                         $add_otp = $user_obj->update_otp($email, $otp);
-    
+
                         if ($add_otp) {
                             $fetch_user = $user_obj->get_user($email);
                             $fetch = mysqli_fetch_array($fetch_user);
-                            $mail=$fetch['email'];
-                            $fetchOtp=$fetch['otp'];
+                            $mail = $fetch['email'];
+                            $fetchOtp = $fetch['otp'];
                             if ($fetch) {
                                 $mail_res = $send_otp_mail_obj->send_otp($mail, $fetchOtp);
                                 if ($mail_res == 1) {
                                     $_SESSION['email'] = $mail;
-                                    ?>
+    ?>
                                     <script>
                                         alert('Otp has been sent on your Email Address');
                                         location.href = 'confirm_otp.php';
                                     </script>
-                    <?php
+                                <?php
                                 } else {
-                                    echo "Failed to Send Otp please Try After Some Time !";
+                                ?>
+                                    <script>
+                                        alert('"Failed to Send Otp please Try After Some Time !');
+                                    </script>
+                                <?php
                                 }
+                            } else {
+                                ?>
+                                <script>
+                                    alert('Please enter valid email !');
+                                </script>
+                        <?php
                             }
                         }
                     } else {
-                        echo "Please enter valid email !";
+                        ?>
+                        <script>
+                            alert('Please enter valid email !');
+                        </script>
+                    <?php
                     }
+                } else {
+                    ?>
+                    <script>
+                        alert('Please enter valid email !');
+                    </script>
+            <?php
                 }
             }
-        }
-        else{
+        } else {
             ?>
             <script>
                 alert("Please Enter Valid Email");
             </script>
-            <?php 
+    <?php
         }
-        
     }
     ?>
 

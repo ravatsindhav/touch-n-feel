@@ -10,7 +10,7 @@
     <meta content="" name="keywords">
 
     <!-- Favicons -->
-    <link href="assets/img/favicon.png" rel="icon">
+    <link href="img/core-img/logo.png" rel="icon">
     <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
     <!-- Google Fonts -->
@@ -96,16 +96,16 @@
                         <div class="col-lg-5 col-md-12" data-aos="fade-up" data-aos-delay="300">
                             <form action="" method="post" role="form" class="php-email-form">
                                 <div class="form-group">
-                                    <input name="name" type="text"  class="form-control" id="name" placeholder="Your Name" required>
+                                    <input name="name" type="text" class="form-control" id="name" placeholder="Your Name" required>
                                 </div>
                                 <div class="form-group">
-                                    <input name="email" type="email" class="form-control"  id="email" placeholder="Your Email" required>
+                                    <input name="email" type="email" class="form-control" id="email" placeholder="Your Email" required>
                                 </div>
                                 <div class="form-group">
-                                    <input name="subject" type="text" class="form-control"  id="subject" placeholder="Subject" required>
+                                    <input name="subject" type="text" class="form-control" id="subject" placeholder="Subject" required>
                                 </div>
                                 <div class="form-group">
-                                    <textarea name="message" class="form-control"  rows="5" placeholder="Message" required></textarea>
+                                    <textarea name="message" class="form-control" rows="5" placeholder="Message" required></textarea>
                                 </div>
                                 <div class="my-3">
                                     <div class="loading">Loading</div>
@@ -125,37 +125,37 @@
     </main>
     <!-- End #main -->
 
-  <!-- Contact Binding -->
-  <?php
-  if (isset($_POST['btn_submit'])) {
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $subject = $_POST['subject'];
-    $message = $_POST['message'];
+    <!-- Contact Binding -->
+    <?php
+    if (isset($_POST['btn_submit'])) {
+        $name = $_POST['name'];
+        $email = $_POST['email'];
+        $subject = $_POST['subject'];
+        $message = $_POST['message'];
 
-    require_once "admin/class/Contact_Class.php";
-    $contact_obj = new Contact_Class();
+        require_once "admin/class/Contact_Class.php";
+        $contact_obj = new Contact_Class();
 
-    if ($name != "" && $email != "" && $subject != "" && $message != "") {
-      $res_add = $contact_obj->add_contact($name, $email, $subject, $message);
-      if ($res_add) {
-  ?>
-        <script>
-          alert('Your Details Successfully Sended');
-        </script>
-      <?php
-        echo "<meta http-equiv='refresh' content='0'>";
-      } else {
-      ?>
-        <script>
-          alert('Failed to Send Your Details');
-        </script>
-  <?php
-      }
+        if ($name != "" && $email != "" && $subject != "" && $message != "") {
+            $res_add = $contact_obj->add_contact($name, $email, $subject, $message);
+            if ($res_add) {
+    ?>
+                <script>
+                    alert('Your Details Successfully Sended');
+                </script>
+            <?php
+                echo "<meta http-equiv='refresh' content='0'>";
+            } else {
+            ?>
+                <script>
+                    alert('Failed to Send Your Details');
+                </script>
+    <?php
+            }
+        }
     }
-  }
-  ?>
-  <!-- End Contact Binding -->
+    ?>
+    <!-- End Contact Binding -->
 
     <!-- ======= Footer ======= -->
     <?php include 'footer.php' ?>

@@ -12,7 +12,7 @@ require_once "class/User_Class.php";
     <meta content="" name="keywords">
 
     <!-- Favicons -->
-    <link href="assets/img/favicon.png" rel="icon">
+    <link href="../img/core-img/logo.png" rel="icon">
     <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
     <meta charset="UTF-8">
@@ -278,15 +278,20 @@ require_once "class/User_Class.php";
             if ($r = mysqli_fetch_array($fetch_user)) {
                 $fetched_pass = $r['password'];
                 if (md5($password, false) == $fetched_pass) {
+                    
                     $_SESSION['user'] = $r['name'];
-    ?>
+                    echo $_SESSION['user'];
+                    // header("Location:product.php");
+                    // exit();
+?>
                     <script>
-                        alert('You Are Login Successfully');
-                        location.href = 'product.php';
+                    alert('You Are Login Successfully');
+                     window.location.href = 'product.php';
                     </script>
-                <?php
+                    <?php
+
                 } else {
-                ?>
+    ?>
                     <script>
                         alert("Please Enter Valid Email & Password");
                     </script>
