@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.0
+-- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 13, 2021 at 07:37 AM
--- Server version: 10.4.18-MariaDB
--- PHP Version: 7.3.27
+-- Generation Time: Jul 16, 2021 at 11:25 AM
+-- Server version: 10.4.20-MariaDB
+-- PHP Version: 8.0.8
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -64,7 +64,7 @@ CREATE TABLE `client` (
 --
 
 INSERT INTO `client` (`id`, `name`, `detail`, `image`, `is_deleted`) VALUES
-(1, 'Aditya Birla', 'sdjsdafhsdfsfsdfsdfsfsdfsdfsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsd', '../img/client/1625840811_pexels-hristo-fidanov-1252890.jpg', 0),
+(1, 'Aditya Birla 1', 'sdjsdafhsdfsfsdfsdfsfsdfsdfsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsd 2', '../img/client/1626330766_pexels-rahul-695644.jpg', 0),
 (2, 'gh', 'sadas', '../img/client/1625917497_astronomy-3069225.jpg', 0),
 (3, 'Aditya Birlafghgf', 'thfghgf', '../img/client/1625918717_IMG_20201214_092543_966.jpg', 0);
 
@@ -81,6 +81,14 @@ CREATE TABLE `contact` (
   `subject` mediumtext NOT NULL,
   `message` mediumtext NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `contact`
+--
+
+INSERT INTO `contact` (`id`, `name`, `email`, `subject`, `message`) VALUES
+(1, 'Ravat Sindhav', 'ravat.s@gurukul.org', 'sadasd', 'asdasd'),
+(2, 'Ravat Sindhav', 'ravat.s@gurukul.org', 'abcd', 'abcd');
 
 -- --------------------------------------------------------
 
@@ -102,10 +110,32 @@ CREATE TABLE `product` (
 --
 
 INSERT INTO `product` (`id`, `name`, `detail`, `category_id`, `image`, `is_deleted`) VALUES
-(5, 'Test', 'sfsdfsfsfsffsfsddf $ sddfxsffsd xsdfsdf', 1, '../img/product/1625480026_add company Ledger.PNG', 0),
+(5, 'Test', 'sfsdfsfsfsffsfsddf $ sddfxsffsd xsdfsdf', 1, '../img/product/1626265403_pexels-markus-spiske-1679719.jpg', 0),
 (6, 'Test as', 'sdfsdf $ sfsdf sdff', 1, '../img/product/1625334731_48214776-Jai-Shri-Krishna-Lord-krishna-wallpapers-Lord-krishna.jpg', 0),
 (7, 'Test vdfsfs', 'sdfsdfsdf', 2, '../img/product/1625334798_7da0135f30e1e5c00da21c8af82d61b5.jpg', 0),
 (8, 'Rushabh Thumar', 'High definition (HD) resolutions like 2 / 3 / 4/ 5 / 8 / 12 and higher Megapixels $\r\nAdvance high compression technology like H.265, H.265+, H.264, H.264+, etc.$\r\nIR Night vision capability$\r\nFixed and Motorized zoom lens$\r\nFixed and Motorized zoom lens$\r\nFixed and Motorized zoom lens$Fixed and Motorized zoom lens$\r\nFixed and Motorized zoom lens$\r\nFixed and Motorized zoom lens$', 1, '../img/product/1625479666_Shree-Krishna-Arjun-On-Rath-Picture-for-Facebook.jpeg', 0);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `user`
+--
+
+CREATE TABLE `user` (
+  `id` int(255) NOT NULL,
+  `name` mediumtext NOT NULL,
+  `email` mediumtext NOT NULL,
+  `password` mediumtext NOT NULL,
+  `otp` bigint(255) NOT NULL,
+  `is_deleted` tinyint(1) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `user`
+--
+
+INSERT INTO `user` (`id`, `name`, `email`, `password`, `otp`, `is_deleted`) VALUES
+(1, 'Ravat Sindhav', 'ravat.s@gurukul.org', '95d253405d1ee8589c53590ea2b21466', 276188, 0);
 
 --
 -- Indexes for dumped tables
@@ -136,6 +166,12 @@ ALTER TABLE `product`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `user`
+--
+ALTER TABLE `user`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -155,13 +191,19 @@ ALTER TABLE `client`
 -- AUTO_INCREMENT for table `contact`
 --
 ALTER TABLE `contact`
-  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `product`
 --
 ALTER TABLE `product`
   MODIFY `id` int(200) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+
+--
+-- AUTO_INCREMENT for table `user`
+--
+ALTER TABLE `user`
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

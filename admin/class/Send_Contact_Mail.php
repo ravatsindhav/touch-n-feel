@@ -622,3 +622,4 @@ class Send_Contact_Mail
         return $mail_res;
     }
 }
+?>
